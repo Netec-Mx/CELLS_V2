@@ -1,4 +1,4 @@
-# Nombre del laboratorio 
+# Práctica 1.4 Conocimientos Generarles IV
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:

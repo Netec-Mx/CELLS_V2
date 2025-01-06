@@ -1,4 +1,4 @@
-# Nombre del laboratorio 
+# Práctica 1.3 Conocimientos Generales III
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:

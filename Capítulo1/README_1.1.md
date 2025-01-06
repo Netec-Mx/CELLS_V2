@@ -1,13 +1,14 @@
-# Nombre del laboratorio 
+# Práctica 1.1 Conocimientos Generales I
 
 ## Objetivo de la práctica:
-Al finalizar la práctica, serás capaz de:
-- Objetivo1
-- Objetivo2
-- Objetivo3
+
+**Al finalizar esta práctica, serás capaz de:**
+
+- Reafirmar y fortalecer tu comprensión teórica sobre los principios fundamentales de la Programación Orientada a Objetos (POO).
+ 
 
 ## Objetivo Visual 
-Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es la siguiente imagen. 
+ 
 
 ![diagrama1](../images/img1.png)
 
