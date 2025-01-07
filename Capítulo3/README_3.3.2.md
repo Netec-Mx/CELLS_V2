@@ -12,11 +12,14 @@ Al finalizar la práctica, serás capaz de:
 ### Tarea 1. **Creación del Proyecto con Lit**
 
 #### Paso 1. **Abre tu terminal y crea un directorio para el proyecto**
+
    ```cmd
    mkdir practica3_3_2
    cd practica3_3_2
    ```
+
 #### Paso 2. **Inicializa un proyecto con Node.js**
+
    ```cmd
    npm init -y
    ```
