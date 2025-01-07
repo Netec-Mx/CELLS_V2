@@ -120,7 +120,7 @@ customElements.define('bb-eventos', BbEventos);
 
     - Abre el archivo `index.html` y define la estructura básica para cargar y mostrar el componente `bb-eventos`.
 
-    ```html
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -136,8 +136,7 @@ customElements.define('bb-eventos', BbEventos);
   <script type="module" src="./src/bb-eventos.js"></script>
 </body>
 </html>
-
-    ```
+```
 
 #### Paso 10. **Iniciar un servidor local para visualizar el proyecto**
 
