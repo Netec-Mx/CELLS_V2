@@ -15,8 +15,7 @@ Al finalizar la práctica, serás capaz de:
 
 
 ## Duración aproximada:
-- 130 minutos.
-
+- 120 minutos.
 
 ## **Requisitos del Proyecto**
 
