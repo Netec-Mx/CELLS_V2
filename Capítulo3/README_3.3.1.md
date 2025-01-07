@@ -4,10 +4,8 @@
 Al finalizar la práctica, serás capaz de:
 - Implementar y utilizar slots en un componente de Lit para crear estructuras flexibles y reutilizables, permitiendo que los usuarios personalicen partes del contenido interno del componente.
   
-
 ## Duración aproximada:
 - 95 minutos.
-
 
 ## Instrucciones 
  
