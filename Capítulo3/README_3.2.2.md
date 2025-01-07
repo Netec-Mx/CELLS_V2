@@ -162,6 +162,7 @@ customElements.define('bb-eventos', BbEventos);
    - Interactúa con el botón y verifica que el contador se actualice correctamente.
    - Asegúrate de que los eventos se manejen de forma fluida y que el diseño sea coherente. 
 
+<br/><br/>
 
 ### Tarea 2. Manejo de Eventos Reactivos
 
@@ -369,12 +370,6 @@ customElements.define('bb-todo-list', BBTodoList);
 
 ### Tarea 4. Actualizaciones eficientes del DOM con requestUpdate.
 
-
-
-### Práctica: Actualizaciones eficientes del DOM con `requestUpdate`
-
----
-
 ### Paso 1: **Implementar el componente Lit**
 
 - Crea un nuevo archivo llamado `bb-weather-display.js` en la carpeta de componentes y añade el siguiente código:
@@ -438,8 +433,6 @@ customElements.define('bb-weather-display', BBWeatherDisplay);
 
 ```
 
----
-
 ### Paso 2: **Modificar el archivo `index.html`**
 
 1. Abre el archivo `index.html` en la raíz del proyecto.
@@ -453,7 +446,6 @@ Ejemplo de `index.html`:
     <bb-weather-display></weather-display>
 ```
 
----
 
 ### Paso 3: **Verificar el resultado**
 
@@ -464,6 +456,8 @@ Ejemplo de `index.html`:
 
 **Nota**: 
 - Esta práctica ayuda a comprender cómo usar `requestUpdate` para optimizar actualizaciones del DOM, especialmente en casos donde los cambios en el estado no se gestionan automáticamente por propiedades reactivas.
+
+<br/><br/>
 
 ### Resultado esperado
 
