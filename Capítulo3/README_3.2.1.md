@@ -473,7 +473,6 @@ En esta tarea, crearás un componente Lit que admita diferentes temas visuales (
    - Observa cómo el componente cambia entre los temas claro y oscuro al hacer clic en el botón.
    - Observa los colores personalizados aplicados mediante variables CSS.
 
----
 
 ### **Conclusión**
 
@@ -487,16 +486,20 @@ Con este componente, aprendiste a manejar temas y personalización visual en Lit
 
 ![Resultados Esperados](../images/image3_2_1_1.png)
 
+<br/>
 
 - Captura de pantalla de la Tarea 2. Encapsulación de estilos con Shadow DOM
 
-![Resultados Esperados](../images/image3_2_1_2.png
+![Resultados Esperados](../images/image3_2_1_2.png)
 
+
+<br/>
 
 - Captura de pantalla de la Tarea 3. Uso de CSS en componentes Lit (css y clases dinámicas)
 
 ![Resultados Esperados](../images/image3_2_1_3.png)
 
+<br/>
 
 - Captura de pantalla de la Tarea 4. Temas
 
