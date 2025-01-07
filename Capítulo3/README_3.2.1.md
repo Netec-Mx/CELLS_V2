@@ -2,6 +2,7 @@
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
+- Definir estilos CSS dentro de un componente Lit.
 - Aplicar estilos CSS a componentes Lit utilizando clases dinámicas para modificar la apariencia de los elementos en tiempo de ejecución.
 - Implementar estilos CSS en un componente Lit y utilizar clases dinámicas para modificar la apariencia de los elementos en respuesta ae ventos o estados internos.
 - Implementar un componente Lit con soporte para temas visuales, y personalización mediante propiedades y variables CSS.
