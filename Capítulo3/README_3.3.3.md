@@ -27,8 +27,8 @@ Al finalizar la práctica, serás capaz de:
 
 ### 2. **Integración con API REST:**
    - Consultar tareas desde una API REST al cargar la página.
-   - [Datos iniciales]](https://raw.githubusercontent.com/Netec-Mx/CELLS_Proveedores/refs/heads/main/Cap%C3%ADtulo3/ProyectoFinal/datos.json)
-   - URL: (https://raw.githubusercontent.com/Netec-Mx/CELLS_Proveedores/refs/heads/main/Cap%C3%ADtulo3/ProyectoFinal/datos.json)
+   - [Datos iniciales](https://raw.githubusercontent.com/Netec-Mx/CELLS_Proveedores/refs/heads/main/Cap%C3%ADtulo3/ProyectoFinal/datos.json)
+   - URL: [`https://raw.githubusercontent.com/Netec-Mx/CELLS_Proveedores/refs/heads/main/Cap%C3%ADtulo3/ProyectoFinal/datos.json`](https://raw.githubusercontent.com/Netec-Mx/CELLS_Proveedores/refs/heads/main/Cap%C3%ADtulo3/ProyectoFinal/datos.json)
    - Guardar nuevas tareas en la API.
    - Actualizar el estado de una tarea en la API.
    - Eliminar tareas desde la API.
