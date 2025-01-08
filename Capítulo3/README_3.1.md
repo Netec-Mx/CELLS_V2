@@ -9,12 +9,9 @@ Al finalizar la práctica, serás capaz de:
 - Implementar la directiva repeat en un componente Lit para optimizar el renderizado de listas de elementos dinámicos.
 
 
-<br/><br/>
 ## Duración aproximada:
 - 80 minutos.
 
-
-<br/><br/>
 ## Tabla de ayuda:
 
 | Software | Link de Descarga | Versión |
@@ -25,7 +22,9 @@ Al finalizar la práctica, serás capaz de:
 |  VSC | https://code.visualstudio.com/download  | v1.96.2  |
 |  es-dev-server| npm install --save-dev es-dev-server   | 2.1.0 |
 
-<br/><br/>
+
+<br/>
+
 ## Instrucciones 
 
 ### Tarea 1: Creación de tu primer Lit Component
@@ -108,7 +107,8 @@ Al finalizar la práctica, serás capaz de:
    - Modificar el contenido del método `render` o los estilos para explorar cómo se reflejan los cambios en la página.
    - Agrega un título a la página: `Práctica 3.1 Lit`
 
----
+
+<br/><br/>
 
 ### **Resultado esperado:** 
 
@@ -232,7 +232,7 @@ customElements.define('bb-ciclo', BBCiclo);
 </html>
 ```
 
---- 
+<br/><br/>
 
 ### **Resultado Esperado:** 
 
@@ -252,7 +252,8 @@ customElements.define('bb-ciclo', BBCiclo);
 
 <br/><br/>
 
-### Tarea 4. Ciclo de Vida II (Actualización & Eliminación)
+
+### Tarea 3. Ciclo de Vida II (Actualización & Eliminación)
 
 #### Paso 1. **Cambios para ver disconnectedCallback**
 
@@ -291,7 +292,7 @@ setTimeout(() => {
 
 - **Nota:**: Este código activará `attributeChangedCallback`, y deberías ver el mensaje en la consola.
 
---- 
+<br/><br/>
 
 ### **Resultado Esperado:** 
 
@@ -306,7 +307,7 @@ setTimeout(() => {
 
 <br/><br/>
 
-### Tarea 5. **Uso de Plantillas en Lit con  con `html```**
+### Tarea 4. **Uso de Plantillas en Lit con  con `html```**
 
 En esta tarea, aprenderás cómo crear y usar plantillas dinámicas con `html`` en Lit. Esto incluye la inserción de valores dinámicos, cómo funcionan las expresiones básicas y cómo utilizarlas en tus componentes.
 
@@ -366,6 +367,7 @@ customElements.define('bb-basica', BBBasica);
 
 ```
 
+<br/> <br/>
 
 #### Paso 3. **Crea tu Componente Lit.**
 
@@ -397,7 +399,6 @@ customElements.define('bb-atributo', BBAtributo);
   En este caso, el atributo disabled se aplica solo cuando active es false, utilizando la sintaxis ?disabled.
 */
 
-
 ```
 
 #### Paso 4. **Incluye el Componente Lit en el HTML**
@@ -423,6 +424,8 @@ customElements.define('bb-atributo', BBAtributo);
 </body>
 </html>
 ```
+
+<br/> <br/>
 
 #### Paso 5. **Crea tu Componente Lit.**
 
@@ -486,6 +489,8 @@ customElements.define('bb-propiedad', BBPropiedad);
 </body>
 </html>
 ```
+
+<br/> <br/>
 
 #### Paso 7. **Crea tu Componente Lit.**
 
@@ -563,6 +568,9 @@ customElements.define('bb-condicional', BBCondicional);
 </html>
 ```
 
+<br/> <br/>
+
+
 #### Paso 9. **Crea tu Componente Lit.**
 ```javascript
 import { html, LitElement } from 'lit';
@@ -634,6 +642,8 @@ customElements.define('bb-condicional', BBCondicional);
 
 </html>
 ```
+
+<br/> <br/>
 
 #### Paso 11. **Crea tu Componente Lit.**
 
@@ -725,6 +735,8 @@ customElements.define('bb-listas', BBListas);
 
 ```
 
+<br/> <br/>
+
 #### Paso 13. **Crea tu Componente Lit.**
 
 ```javascript
@@ -814,6 +826,9 @@ customElements.define('bb-nodo', BBNodo);
 </html>
 
 ```
+
+<br/> <br/>
+
 
 #### Paso 15. **Crea tu Componente Lit.**
 
@@ -919,6 +934,7 @@ customElements.define('bb-complejo', BBComplejo);
 
 #### Paso 1. **Modificar la página principal HTML**
 1. Crea una nueva página HTML.
+
 2. Actualiza la página principal para incluir un enlace de navegación hacia la nueva página.
 
 Ejemplo de código a incluir en la página principal:
@@ -1039,23 +1055,23 @@ customElements.define('bb-condicionales', BBCondicionales);
 
 - El ejemplo de condicionales en **Lit** demuestra cómo manejar la lógica de renderizado dinámico utilizando diferentes estructuras condicionales (`operador ternario`, `if-else` y `switch`) dentro de un componente web personalizado. Este enfoque permite renderizar contenido dinámico en función del estado o propiedades del componente, manteniendo el código modular, reutilizable y fácil de leer.
 
-  ![Resultado Esperado](../images/imagen3_6.png)
+![Resultado Esperado](../images/imagen3_6.png)
 
 
 <br/><br/>
 
 ### Tarea 7. Iteraciones en Lit
 
-Paso 1. **Crea el componente base:**
+#### Paso 1. **Crea el componente base:**
    - Dentro de la carpeta `src`, crea un archivo llamado `bb-iteraciones-lit.js`.
 
-Paso 2. **Define las iteraciones básicas:**
+#### Paso 2. **Define las iteraciones básicas:**
    - Implementa el siguiente código que muestra tres tipos de iteraciones:
      1. **Iteración básica con `map()`.**
      2. **Iteración usando un contador.**
      3. **Renderizado condicional basado en iteraciones.**
 
-Paso 3. **Código inicial:**  
+#### Paso 3. **Código inicial:**  
    Copia el siguiente código en `bb-iteraciones-lit.js`:
 
    ```javascript
@@ -1121,7 +1137,7 @@ Paso 3. **Código inicial:**
    customElements.define('bb-iteraciones-lit', BBIteracionesLit);
    ```
 
-Paso 4. **Incluye el componente en tu aplicación:**
+#### Paso 4. **Incluye el componente en tu aplicación:**
    - Asegúrate de importar y utilizar el componente en el archivo principal de tu proyecto.
 
 
