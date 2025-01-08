@@ -14,7 +14,7 @@ Al finalizar la práctica, serás capaz de:
 
 ## Instrucciones 
 
-### **Tarea 1. Estilos en Lit**
+### Tarea 1. Estilos en Lit
 
 #### Paso 1. **Crear la carpeta principal del proyecto:**
    Ejecuta el siguiente comando para crear una carpeta llamada `practica3_2_1` que contendrá tu proyecto.  
@@ -235,7 +235,7 @@ En esta tarea, aprenderás a encapsular estilos utilizando el Shadow DOM con Lit
  
 <br/><br/>
 
-### **Tarea 3. Uso de CSS en componentes Lit (CSS y clases dinámicas)**
+### Tarea 3. Uso de CSS en componentes Lit (CSS y clases dinámicas)
 
 En esta tarea, aprenderás a usar estilos en componentes Lit, incluyendo la manipulación de clases dinámicas para personalizar la apariencia de los elementos en tiempo de ejecución.
 
@@ -328,7 +328,7 @@ customElements.define('bb-clases-dinamicas', BbClasesDinamicas);
      <script type="module" src="./src/bb-clases-dinamicas.js"></script>
    ```
 
-### Paso 3. **Probar el Componente**
+#### Paso 3. **Probar el Componente**
 
 1. **Inicia un servidor local para ejecutar el proyecto:**  
   
@@ -344,7 +344,7 @@ customElements.define('bb-clases-dinamicas', BbClasesDinamicas);
 
 <br/><br/>
 
-### **Tarea 4. Temas y personalización visual**
+### Tarea 4. Temas y personalización visual
 
 En esta tarea, crearás un componente Lit que admita diferentes temas visuales (por ejemplo, claro y oscuro) y permita personalización adicional mediante propiedades.
 

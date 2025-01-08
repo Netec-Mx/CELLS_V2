@@ -307,7 +307,7 @@ setTimeout(() => {
 
 <br/><br/>
 
-### Tarea 4. **Uso de Plantillas en Lit con  con `html```**
+### Tarea 4. Uso de Plantillas en Lit con  con `html```
 
 En esta tarea, aprenderás cómo crear y usar plantillas dinámicas con `html`` en Lit. Esto incluye la inserción de valores dinámicos, cómo funcionan las expresiones básicas y cómo utilizarlas en tus componentes.
 
@@ -930,7 +930,7 @@ customElements.define('bb-complejo', BBComplejo);
 
 <br/><br/>
  
-### Tarea 6. **Propiedades y Atributos Reactivos**
+### Tarea 6. Propiedades y Atributos Reactivos
 
 #### Paso 1. **Modificar la página principal HTML**
 1. Crea una nueva página HTML.
@@ -1155,7 +1155,7 @@ customElements.define('bb-condicionales', BBCondicionales);
 <br/><br/>
 
 
-### Tarea 8. **Directiva repeat**
+### Tarea 8. Directiva repeat
 
 #### Paso 1. **Copia y pega el código JavaScript para un nuevo componente Lit**
 

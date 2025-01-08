@@ -6,13 +6,14 @@ Al finalizar la práctica, serás capaz de:
 - Implementar un componente Lit que maneja eventos de forma reactiva, actualizando el estado interno y reflejando los cambios en la interfaz de usuario.
 - gestionar el estado reactivo en componentes Lit mediante el uso de propiedades observables.
 
+
 ## Duración aproximada:
 - 95 minutos.
 
  
 ## Instrucciones 
  
-### **Tarea 1: Manejo de Eventos en Lit**
+### Tarea 1: Manejo de Eventos en Lit
 
 En esta tarea, aprenderás a manejar eventos en un componente Lit. Comenzarás con la configuración del proyecto y crearás un componente que capture y gestione eventos, modificando su comportamiento en respuesta a las interacciones del usuario.
 
@@ -58,10 +59,12 @@ En esta tarea, aprenderás a manejar eventos en un componente Lit. Comenzarás c
 
 #### Paso 8. **Abre el archivo `bb-eventos.js` y agrega el siguiente contenido:**
 
-   - **Define un contador que incrementa al hacer clic en un botón.**
-   - **Muestra un mensaje dinámico basado en la interacción del usuario.**
+- **Define un contador que incrementa al hacer clic en un botón.**
+- **Muestra un mensaje dinámico basado en la interacción del usuario.**
 
-   ```javascript
+<br/>
+
+```javascript
    import { LitElement, html, css } from 'lit';
 
 class BbEventos extends LitElement {
@@ -116,7 +119,7 @@ class BbEventos extends LitElement {
 
 customElements.define('bb-eventos', BbEventos);
 
-   ```
+```
 
 #### Paso 9. **Actualizar el archivo `index.html`**
 
@@ -168,7 +171,7 @@ customElements.define('bb-eventos', BbEventos);
 
 En esta tarea, aprenderás a manejar eventos reactivos en un componente Lit y a integrarlo con el archivo `index.html`.
 
-#### **Paso 1: Implementar el Componente Lit**
+#### Paso 1. **Implementar el Componente Lit**
 
 1. Crea o abre el archivo `bb-eventos-reactivos.js` y agrega el siguiente código:
 
@@ -235,7 +238,7 @@ En esta tarea, aprenderás a manejar eventos reactivos en un componente Lit y a 
    ```
 
 
-#### **Paso 2: Modificar el archivo `index.html`**
+#### Paso 2. **Modificar el archivo `index.html`**
 1. Abre el archivo `index.html` y agrega el siguiente código para integrar el componente `bb-eventos-reactivos`:
 
    ```html
@@ -256,7 +259,7 @@ En esta tarea, aprenderás a manejar eventos reactivos en un componente Lit y a 
 
 <br/><br/>
 
-### **Tarea 3: Gestión de Estado Reactivo con Propiedades Observables**
+### Tarea 3: Gestión de Estado Reactivo con Propiedades Observables
 
 #### Paso 1. **Implementar el Componente Lit**
 
@@ -360,7 +363,7 @@ customElements.define('bb-todo-list', BBTodoList);
 ```
 
 
-### Paso 3. **Verificar el resultado**
+#### Paso 3. **Verificar el resultado**
 
 - Abre tu navegador y recarga la página para asegurarte de que los cambios se reflejan correctamente.
 - Prueba el componente implementado en esta práctica interactuando con sus funcionalidades para validar su comportamiento esperado.
@@ -370,7 +373,7 @@ customElements.define('bb-todo-list', BBTodoList);
 
 ### Tarea 4. Actualizaciones eficientes del DOM con requestUpdate.
 
-### Paso 1: **Implementar el componente Lit**
+#### Paso 1. **Implementar el componente Lit**
 
 - Crea un nuevo archivo llamado `bb-weather-display.js` en la carpeta de componentes y añade el siguiente código:
 
@@ -433,7 +436,7 @@ customElements.define('bb-weather-display', BBWeatherDisplay);
 
 ```
 
-### Paso 2: **Modificar el archivo `index.html`**
+#### Paso 2. **Modificar el archivo `index.html`**
 
 1. Abre el archivo `index.html` en la raíz del proyecto.
 2. Importa el componente `weather-display.js` y añádelo al cuerpo del documento.
@@ -447,7 +450,7 @@ Ejemplo de `index.html`:
 ```
 
 
-### Paso 3: **Verificar el resultado**
+#### Paso 3. **Verificar el resultado**
 
 1. Recarga el proyecto de esta práctica.
 2. Interactúa con el componente haciendo clic en el botón **Update Temperature**. 

@@ -9,7 +9,7 @@ Al finalizar la práctica, serás capaz de:
 
 ## Instrucciones 
  
-### Tarea 1. Crear un componetne con slots
+### Tarea 1. Crear un componente con slots
 
 1. Implementa un componente Lit que soporte al menos dos slots:
    - **Slot predeterminado**: Para mostrar contenido genérico.
@@ -55,7 +55,7 @@ Al finalizar la práctica, serás capaz de:
      ```  
 
 
-#### Paso 4: Crear el componente `my-card`
+#### Paso 4. **Crear el componente `my-card`**
 1. Define un nuevo componente llamado `my-card`.
 
 2. Usa la clase `LitElement` y extiéndela.
@@ -119,7 +119,7 @@ customElements.define('bb-card', BBCard);
 </my-card>
 ```
 
-##### Paso 6: Agregar otro uso del componente
+#### Paso 6. **Agregar otro uso del componente**
 1. Crea un segundo `my-card` con diferentes contenidos en los slots para observar la flexibilidad.
 
 2. Personaliza los estilos del contenido utilizando clases o estilos en línea.
@@ -176,7 +176,7 @@ customElements.define('bb-card', BBCard);
 
 ### Tarea adicional:
 
-#### Paso 1. Agrega un tercer slot opcional llamado `"footer"` para el pie del componente.
+#### Paso 1. **Agrega un tercer slot opcional llamado `"footer"` para el pie del componente.**
 
 Muestra un mensaje predeterminado si el slot `"footer"` no recibe contenido.
 
@@ -196,7 +196,7 @@ render() {
   }
 ```
 
-### Paso 2. **Ejemplo de uso:**
+#### Paso 2. **Ejemplo de uso:**
 
 ```html
     <bb-card>
@@ -208,7 +208,7 @@ render() {
     <bb-card></bb-card>
 ```
 
-### Paso 3. ** Mejora su estilo**
+#### Paso 3. **Mejora su estilo**
 
 ```javascript
   .footer {
@@ -220,6 +220,8 @@ render() {
       text-align: center;
     }
 ```
+
+<br/><br/>
 
 ### Resultado esperado
  

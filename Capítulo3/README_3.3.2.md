@@ -9,7 +9,7 @@ Al finalizar la práctica, serás capaz de:
 
 ## Instrucciones 
  
-### Tarea 1. **Creación del Proyecto con Lit**
+### Tarea 1. Creación del Proyecto con Lit
 
 #### Paso 1. **Abre tu terminal y crea un directorio para el proyecto**
 
@@ -170,14 +170,14 @@ customElements.define('bb-component', BBComponent);
    npm install --save-dev lite-server
    ```
 
-#### Paso 2. Agrega un script para ejecutar el servidor en el archivo `package.json`:
+#### Paso 2. **Agrega un script para ejecutar el servidor en el archivo `package.json`:**
    ```json
    "scripts": {
      "start": "es-dev-server --app-index index.html --node-resolve --open"
    }
    ```
 
-#### Paso 3. Ejecuta el proyecto:
+#### Paso 3. **Ejecuta el proyecto:**
    ```cmd
    npm start
    ```
