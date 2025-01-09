@@ -602,10 +602,91 @@ Observa cómo el componente cambia dinámicamente al interactuar con los botones
 1. ¿Cuántas combinaciones diferentes de estados lograste encontrar?
 2. Observa cómo los colores personalizados cambian según el estado, aplicados dinámicamente mediante clases CSS y la directiva `classMap`. ¿Qué combinación te pareció más interesante?
 
+<br/></br>
 
 
+### Tarea 6 Transformación de Componente Lit
+
+#### Paso 1. **Define un nuevo componente Lit y transforma el componente**
+
+- Dado el siguiente código JavaScript que define un nuevo componente Lit, completa la implementación del segundo componente asegurando que utilice la directiva `classMap` para gestionar dinámicamente las clases CSS, manteniendo la misma funcionalidad que en el primer componente.
+
+```javascript
+import { LitElement, html, css } from 'lit';
+ 
+class BBTextoNegritas extends LitElement {
+
+    static get properties() {
+        return {
+            boldText: { type: Boolean }
+        };
+    }
+
+    static get styles() {
+        return css`
+            p {
+                font-size: 26px;
+            }
+            .bold {
+                font-weight: bold;
+            }
+    ` ;
+    }
+
+    constructor() {
+        super();
+        this.boldText = false;
+    }
+
+    render() {
+        return html`
+            <p class="${this.boldText ? 'bold' : ''}">Este es un texto de ejemplo.</p>
+            <button @click="${this.toggleBold}">Estilo</button>
+    ` ;
+    }
+
+    toggleBold() {
+        this.boldText = !this.boldText;
+    }
+}
+
+
+class BBTextoNegritasD extends LitElement {
+  
+}
+
+customElements.define('bb-texto-negritas', BBTextoNegritas);
+customElements.define('bb-texto-negritasd', BBTextoNegritasD);
+
+```
+
+#### Paso 2. **Actualiza tu página HTML**
+
+```html
+    
+    <H2>Opción Dada</H2>
+    <script type="module" src="src/bb-texto-negritas.js"></script>
+    <bb-texto-negritas></bb-texto-negritas>
+
+    <H2>Opción Transformada</H2>
+    <bb-texto-negritasd></bb-texto-negritasd>
+
+```
+
+### Paso 3. **Verifica el resultado:**
+ 
+- Como último paso, verifica el comportamiento del componente recargando la página para asegurarte de que la funcionalidad y la gestión dinámica de clases con `classMap` se mantienen correctamente en esta práctica.
+
+- ¿Qué sucedería si reemplazas el método `toggleBold()` en los componentes por el siguiente código? 
+
+```javascript
+toggleBold() {
+    this.boldText = this.boldText;
+}
+```
 
 <br/><br/>
+
 ## Resultados Esperados
 
 - Captura de pantalla de la Tarea 1. Estilos en Lit
