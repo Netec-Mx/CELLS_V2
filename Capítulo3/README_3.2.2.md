@@ -110,7 +110,7 @@ class BbEventos extends LitElement {
 
   render() {
     return html`
-      <h2>Manejo de Eventos en Lit</h2>
+      <strong>Manejo de Eventos en Lit</strong>
       <button class="button" @click="${this.handleClick}">Haz clic aquí</button>
       <div class="message">${this.message}</div>
     `;
@@ -120,6 +120,10 @@ class BbEventos extends LitElement {
 customElements.define('bb-eventos', BbEventos);
 
 ```
+
+- **Nota**: 
+  1. ¿Cuál es el estilo predeterminado que aplica un navegador a la etiqueta `<strong>`?
+  2. ¿Qué modificaciones harías para que el texto dentro de `<strong>` se muestre en color azul?
 
 #### Paso 9. **Actualizar el archivo `index.html`**
 
@@ -446,7 +450,7 @@ Ejemplo de `index.html`:
 ```html
     <script type="module" src="src/bb-weatherDisplay.js"></script>
     <h1>Weather Display</h1>
-    <bb-weather-display></weather-display>
+    <bb-weather-display></bb-weather-display>
 ```
 
 
@@ -459,6 +463,93 @@ Ejemplo de `index.html`:
 
 **Nota**: 
 - Esta práctica ayuda a comprender cómo usar `requestUpdate` para optimizar actualizaciones del DOM, especialmente en casos donde los cambios en el estado no se gestionan automáticamente por propiedades reactivas.
+
+<br/><br/>
+
+### Tarea 5. Toggle Button
+
+#### Paso 1. **Implementar el componente Lit** 
+
+- Crea un nuevo archivo llamado `bb-toggle-button.js` en la carpeta de componentes y añade el siguiente código:
+
+```javascript
+import { LitElement, html, css } from 'lit';
+
+class BBToggleButton extends LitElement {
+
+  static get properties() {  // Sintaxis heredada en LitElement
+    return {
+      disabled: { type: Boolean },
+    };
+  }
+
+  constructor() {
+    super();
+    this.disabled = false;
+  }
+
+  static styles = css`
+    button {
+      font-size: 1rem;
+      padding: 0.5em 1em;
+      margin: 0.5em;
+      border-radius: 0.25em;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+
+    button[disabled] {
+      background-color: #eee;
+      color: #aaa;
+      cursor: not-allowed;
+    }
+
+    button:not([disabled]):hover {
+      background-color: #f0f0f0;
+    }
+  `;
+
+  render() {
+    // Uso ?attribute & @event
+    return html`
+      <button ?disabled="${this.disabled}">Botón ${!this.disabled ? "Habilitado" : "Deshabilitado"}</button>
+      <button @click="${this.toggleButton}">
+        ${this.disabled ? 'Habilitar' : 'Deshabilitar'} Botón
+      </button>
+    `;
+  }
+
+
+  toggleButton() {
+    this.disabled = !this.disabled;
+  }
+}
+
+customElements.define('bb-toggle-button', BBToggleButton);
+
+```
+
+
+#### Paso 2. **Modificar el archivo `index.html`**
+
+1. Abre el archivo `index.html` en la raíz del proyecto.
+2. Importa el componente `bb-toggle-button.js` y añádelo al cuerpo del documento.
+
+Ejemplo de `index.html`:
+
+```html
+    <script type="module" src="./src/bb-toggle-button.js"></script>
+    <br/>
+    <H2>Toggle Button</H2>
+    <bb-toggle-button></bb-toggle-button>
+```
+
+
+#### Paso 3. **Verificar el resultado**
+
+1. Recarga el proyecto de esta práctica.
+2. Interactúa con el componente haciendo clic en el botón que maneja sus pulsaciones. 
+ 
 
 <br/><br/>
 
@@ -485,3 +576,9 @@ Ejemplo de `index.html`:
 - Captura de pantalla para mostrar la salida de la Tarea 4.
 
 ![imagen resultado](../images/image3_2_2_4.png)
+
+<br/>
+
+- Captura de pantalla para mostrar la salida de la Tarea 5.
+
+![imagen resultado](../images/image3_2_2_5.png)

@@ -480,6 +480,132 @@ Con este componente, aprendiste a manejar temas y personalización visual en Lit
 
 <br/><br/>
 
+### Tarea 5 Uso de classMap
+
+#### Paso 1. **Define un nuevo componente Lit**
+
+```javascript
+
+import { LitElement, html, css } from 'lit';
+import { classMap } from 'lit-html/directives/class-map.js';
+
+class BBClassMap extends LitElement {
+  static styles = css`
+    :host {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .active {
+      color: white;
+      background-color: green;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .disabled {
+      color: white;
+      background-color: gray;
+      padding: 10px;
+      border-radius: 5px;
+      opacity: 0.7;
+      transition: opacity 0.3s ease, background-color 0.3s ease;
+    }
+
+    .active.disabled {
+      background-color: darkred;
+    }
+
+    div {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 2px solid transparent;
+      transition: border-color 0.3s ease, transform 0.3s ease;
+    }
+
+    div:hover {
+      border-color: black;
+      transform: scale(1.05);
+    }
+
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: lightgray;
+      transform: scale(1.1);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+  `;
+
+  static properties = {
+    isActive: { type: Boolean },
+    isDisabled: { type: Boolean },
+  };
+
+  constructor() {
+    super();
+    this.isActive = false;
+    this.isDisabled = false;
+  }
+
+  render() {
+    const classes = {
+      active: this.isActive,
+      disabled: this.isDisabled,
+    };
+
+    return html`
+      <div class="${classMap(classes)}">Hello, Lit!</div>
+      <button @click="${() => (this.isActive = !this.isActive)}">
+        Toggle Active
+      </button>
+      <button @click="${() => (this.isDisabled = !this.isDisabled)}">
+        Toggle Disabled
+      </button>
+    `;
+  }
+}
+
+customElements.define('bb-classmap', BBClassMap);
+
+```
+
+#### Paso 2. **Actualiza tu página HTML**
+
+```html
+ <!-- Componente personalizado -->
+    <bb-classMap></bb-classMap>
+
+    <!-- Cargar el módulo de JavaScript -->
+    <script type="module" src="./src/bb-classmap.js"></script>
+```
+
+### Paso 3. **Verifica el resultado:**
+Observa cómo el componente cambia dinámicamente al interactuar con los botones. Puedes alternar el estado utilizando el botón "Toggle Active" y/o combinarlos con el botón "Toggle Disabled".
+
+1. ¿Cuántas combinaciones diferentes de estados lograste encontrar?
+2. Observa cómo los colores personalizados cambian según el estado, aplicados dinámicamente mediante clases CSS y la directiva `classMap`. ¿Qué combinación te pareció más interesante?
+
+
+
+
+<br/><br/>
 ## Resultados Esperados
 
 - Captura de pantalla de la Tarea 1. Estilos en Lit
@@ -504,6 +630,13 @@ Con este componente, aprendiste a manejar temas y personalización visual en Lit
 - Captura de pantalla de la Tarea 4. Temas
 
 ![Resultados Esperados](../images/image3_2_1_4.png)
+
+<br/>
+
+- Captura de pantalla de la Tarea 5. Uso de classMap
+
+![Resultados Esperados](../images/image3_2_1_5.png)
+
 
 
 

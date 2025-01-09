@@ -38,7 +38,15 @@ Al finalizar la práctica, serás capaz de:
    - Usar estilos avanzados para mejorar la experiencia de usuario.
    - Incorporar notificaciones visuales (como cambios de color o iconos) para tareas completadas.
 
+### 4. **Herramientas necesarias:**
+   - Node.js y npm instalados.
+   - Editor de código, como Visual Studio Code.
+   - Navegador moderno compatible con Web Components (Chrome, Firefox, Edge).
+   - Git
+   - Repositorio Remoto en GitHub, con acceso de lectura al instructor asignado.
 
+   <br/> <br/>
+   
 ## **Instrucciones**
 
 ### 1. **Configurar el Proyecto:**
