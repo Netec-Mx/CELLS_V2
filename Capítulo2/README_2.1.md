@@ -1,5 +1,5 @@
 
-# **Práctica 2.1: Fundamentos**
+# **Práctica 2.1 Fundamentos**
 
 ## Objetivo 
 
@@ -13,7 +13,7 @@ Al finalizar la práctica, serás capaz de:
 
 ## Instrucciones
 
-### Tarea 1: Declaración de Variables
+### Tarea 1. Declaración de Variables
 
 #### **Paso 1:**  
 - Abre tu editor de código y crea un archivo llamado `fundamentos.js`.  
@@ -34,7 +34,7 @@ node fundamentos.js
 
 <br/><br/>
 
-### Tarea 2: Tipos de Datos Primitivos y Estructuras Complejas
+### Tarea 2. Tipos de Datos Primitivos y Estructuras Complejas
 
 #### **Paso 1:**  
 
@@ -76,7 +76,7 @@ persona["edad"] = 21;
 
 <br/> <br/>
 
-### Tarea 3: Operadores y Estructuras de Control
+### Tarea 3. Operadores y Estructuras de Control
 
 #### **Paso 1:**
 - Instala la librería `promp-sync`
@@ -198,7 +198,7 @@ console.log(`\nLa suma de los números del 1 al 10 es: ${suma}`);
 <br/><br/>
 
 
-### **Tarea 4: Integración**
+### **Tarea 4. Integración**
 
 Combina los conceptos aprendidos:  
 
