@@ -17,6 +17,8 @@ Al finalizar la práctica, serás capaz de:
 4. Guarda tu archivo con el nombre `practica_2_3.js`.
 5. Al terminar, verifica que todos los pasos cumplen con los requisitos del resultado esperado.
 
+## **Instrucciones**
+
 ### **Tarea 1: Crear una Clase con Propiedades y Métodos**
 1. Define una clase que represente un tipo de objeto de tu elección (por ejemplo, un `Vehículo` o un `Libro`).
 2. Añade propiedades básicas al constructor para inicializar los atributos del objeto.
