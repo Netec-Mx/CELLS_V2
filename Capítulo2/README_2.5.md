@@ -1,151 +1,180 @@
-# Práctica 2.4.2  Manejo Asíncrono de Datos con Async/Await y Fetch
+# Prática 2.5 DOM
 
 ## Objetivo de la práctica:
-Al finalizar esta práctica, serás capaz de:
-1. Utilizar `fetch` para realizar llamadas HTTP y obtener datos de una API.
-2. Manejar datos asíncronos utilizando promesas.
-3. Implementar `async` y `await` para simplificar el manejo de operaciones asíncronas.
-4. Manejar errores en llamadas asíncronas y mostrar mensajes adecuados al usuario.
-5. Manipular datos obtenidos de una API para mostrarlos de manera organizada en una página web.
- 
-
-## Objetivo Visual 
-Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es la siguiente imagen. 
-
-![diagrama1](../images/img1.png)
+Al finalizar la práctica, serás capaz de:
+- Manipular elementos del DOM seleccionándolos y modificando su contenido y estilos.
+- Gestionar clases de elementos del DOM utilizando la API classList.
+- Implementar y manejar eventos en el DOM utilizando funciones flecha.
+- Utilizar atributos data-* y la propiedad dataset para gestionar información dinámica.
+- Aplicar LocalStorage y SessionStorage para almacenar datos persistentes y temporales.
 
 ## Duración aproximada:
-- 35 minutos.
- 
-## Instrucciones Generales
+- 40 minutos.
 
-1. **Archivos iniciales**: Crea un archivo `practica2_5.html` y un archivo `practica2_5.js` donde escribirás el código JavaScript.
+## Instrucciones 
 
-2. Utiliza la API [https://reqres.in/](https://reqres.in/) para obtener datos de usuarios y probar la creación de un nuevo usuario.
+### **Tarea 1: Crear el HTML base**
+
+Crea un archivo `practica2_5.html` con la siguiente estructura:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica 2.6: Manipulación del DOM</title>
+  <style>
+    .highlight {
+      color: white;
+      background-color: #007bff;
+      padding: 5px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title">Manipulación del DOM</h1>
+  <p id="description" data-info="editable">Este es un ejemplo inicial del texto.</p>
+  <button id="toggleClass">Cambiar Clase</button>
+  <button id="updateContent">Actualizar Contenido</button>
+  <button id="saveToLocalStorage">Guardar en LocalStorage</button>
+  <button id="loadFromLocalStorage">Cargar desde LocalStorage</button>
+  <button id="clearLocalStorage">Limpiar LocalStorage</button>
+  <div id="message"></div>
+
+  <script src="practica2_5.js"></script>
+</body>
+</html>
+```
+
+<br/>
+
+### **Tarea 2: Seleccionar elementos y manipular contenido**
+
+Crea un archivo `practica2_5.js` y selecciona los elementos en el DOM utilizando `querySelector`. Cambia el contenido del párrafo con un evento.
+
+```javascript
+document.querySelector("#updateContent").addEventListener("click", () => {
+  const description = document.querySelector("#description");
+  description.textContent = "El contenido ha sido actualizado dinámicamente.";
+});
+```
+
+<br/>
+
+### **Tarea 3: Modificar estilos utilizando `classList`**
+
+Añade o elimina una clase utilizando `classList.toggle`.
+
+```javascript
+document.querySelector("#toggleClass").addEventListener("click", () => {
+  const title = document.querySelector("#title");
+  title.classList.toggle("highlight");
+});
+```
+
+<br/>
+
+### **Tarea 4: Utilizar `data-*` y `dataset`**
+
+Muestra el valor del atributo `data-info` del párrafo y actualízalo dinámicamente.
+
+```javascript
+document.querySelector("#updateContent").addEventListener("click", () => {
+  const description = document.querySelector("#description");
+  console.log("Información actual:", description.dataset.info);
+  description.dataset.info = "actualizado";
+});
+```
+
+<br/>
+
+### **Tarea 5: Almacenamiento con LocalStorage y SessionStorage**
+
+Guarda y recupera el contenido del párrafo utilizando LocalStorage.
+
+```javascript
+document.querySelector("#saveToLocalStorage").addEventListener("click", () => {
+  const description = document.querySelector("#description").textContent;
+  localStorage.setItem("description", description);
+  document.querySelector("#message").textContent = "Contenido guardado en LocalStorage.";
+});
+
+document.querySelector("#loadFromLocalStorage").addEventListener("click", () => {
+  const savedDescription = localStorage.getItem("description");
+  if (savedDescription) {
+    document.querySelector("#description").textContent = savedDescription;
+    document.querySelector("#message").textContent = "Contenido cargado desde LocalStorage.";
+  } else {
+    document.querySelector("#message").textContent = "No hay contenido guardado en LocalStorage.";
+  }
+});
+
+document.querySelector("#clearLocalStorage").addEventListener("click", () => {
+  localStorage.removeItem("description");
+  document.querySelector("#message").textContent = "LocalStorage limpiado.";
+});
+```
+
+<br/>
+
+#### **Tareas Adicionales**
+
+1. **Añadir estilos condicionales:** Cambia el color del texto del párrafo basándote en el valor almacenado en `data-info`.
+
+2. **Extender almacenamiento:** Usa `sessionStorage` para guardar temporalmente el estado de un botón (si está activado o no).
+
+```javascript
+// Guardar el estado del botón en sessionStorage
+document.querySelector("#toggleClass").addEventListener("click", () => {
+    const title = document.querySelector("#title");
+    const isHighlighted = title.classList.contains("highlight");
+
+    // Guardar el estado (true o false) en sessionStorage
+    sessionStorage.setItem("isHighlighted", isHighlighted);
+});
+
+// Restaurar el estado del botón al cargar la página
+window.addEventListener("load", () => {
+    const isHighlighted = sessionStorage.getItem("isHighlighted") === "true";
+
+    if (isHighlighted) {
+        document.querySelector("#title").classList.add("highlight");
+    }
+});
 
 
-## Instrucciones
+// Guardar el estado del botón en sessionStorage
+document.querySelector("#toggleClass").addEventListener("click", () => {
+    const title = document.querySelector("#title");
+    const isHighlighted = title.classList.contains("highlight");
 
-### **Tarea 1: Obtener y Mostrar Usuarios**
+    // Guardar el estado (true o false) en sessionStorage
+    sessionStorage.setItem("isHighlighted", isHighlighted);
+});
 
-#### Paso 1. **En `index.html`, agrega una estructura básica con un botón y una tabla para mostrar usuarios:**
+// Restaurar el estado del botón al cargar la página
+window.addEventListener("load", () => {
+    const isHighlighted = sessionStorage.getItem("isHighlighted") === "true";
 
-      ```html
-      <!DOCTYPE html>
-      <html lang="en">
-      <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>[Práctica 2.5]</title>
-      </head>
-      <body>
-          <h1>Lista de Usuarios</h1>
-          <button id="loadUsers">Cargar Usuarios</button>
-          <table border="1">
-              <thead>
-                  <tr>
-                      <th>ID</th>
-                      <th>Nombre</th>
-                      <th>Email</th>
-                  </tr>
-              </thead>
-              <tbody id="userTable"></tbody>
-          </table>
-          <script src="app.js"></script>
-      </body>
-      </html>
-      ```
+    if (isHighlighted) {
+        document.querySelector("#title").classList.add("highlight");
+    }
+});
 
-#### Paso 2. **En `app.js`, escribe la función para obtener los datos de usuarios:**
+```
 
-      ```javascript
-      async function fetchUsers() {
-          try {
-              const response = await fetch('https://reqres.in/api/users?page=1');
-              if (!response.ok) throw new Error('Error al obtener usuarios');
-              const data = await response.json();
-
-              const userTable = document.getElementById('userTable');
-              userTable.innerHTML = '';  
-              data.data.forEach(user => {
-                  const row = `<tr>
-                      <td>${user.id}</td>
-                      <td>${user.first_name} ${user.last_name}</td>
-                      <td>${user.email}</td>
-                  </tr>`;
-                  userTable.innerHTML += row;
-              });
-          } catch (error) {
-              alert(error.message);
-          }
-      }
-
-      document.getElementById('loadUsers').addEventListener('click', fetchUsers);
-      ```
- 
-
-### **Tarea 2: Crear un Usuario**
-
-#### Paso 1. ** En `index.html`, agrega un formulario para ingresar los datos del nuevo usuario:**
-
-      ```html
-      <h2>Crear Usuario</h2>
-      <form id="createUserForm">
-          <input type="text" id="userName" placeholder="Nombre" required>
-          <input type="text" id="userJob" placeholder="Trabajo" required>
-          <button type="submit">Crear Usuario</button>
-      </form>
-      <div id="createdUser"></div>
-      ```
-
-#### Paso 2. **En `app.js`, escribe la lógica para crear un usuario:**
-
-      ```javascript
-      async function createUser(event) {
-          event.preventDefault();  
-          
-          const name = document.getElementById('userName').value;
-          const job = document.getElementById('userJob').value;
-
-          try {
-              const response = await fetch('https://reqres.in/api/users', {
-                  method: 'POST',
-                  headers: {
-                      'Content-Type': 'application/json',
-                  },
-                  body: JSON.stringify({ name, job }),
-              });
-
-              if (!response.ok) throw new Error('Error al crear usuario');
-              const data = await response.json();
-
-              const createdUser = document.getElementById('createdUser');
-              createdUser.innerHTML = `
-                  <p>
-                  Usuario creado: ${data.name}, Trabajo: ${data.job}, ID: ${data.id}
-                  </p>
-              `;
-          } catch (error) {
-              alert(error.message);
-          }
-      }
-
-      document.getElementById('createUserForm').addEventListener('submit', createUser);
-      ```
-
-### **Tarea 3: Manejo de Errores (Opcional)**
-
-1. **Objetivo**: Implementar manejo de errores en las llamadas a la API.
-
-2. **Pasos**:
-   - En las funciones `fetchUsers` y `createUser`, ya se manejan errores con `try...catch`.
-
-   - Simula un error modificando la URL en el método `fetch` (por ejemplo, usa una URL incorrecta como `'https://reqres.in/api/invalid'`) y observa cómo se muestra el mensaje de error.
-   
-   
 <br/><br/>
 
-### Resultado esperado
+### **Resultado Esperado**
 
+1. El usuario puede interactuar con los botones para manipular el contenido y estilo de los elementos del DOM.
 
-![imagen resultado](../images/image2_5_1.png)
+2. Los cambios pueden ser guardados en LocalStorage y restaurados al presionar el botón correspondiente.
+
+3. Los datos temporales persisten durante la sesión del navegador utilizando `sessionStorage`.
+
+<br/>
+
+![imagen resultado](../images/image2_6_1.png)
