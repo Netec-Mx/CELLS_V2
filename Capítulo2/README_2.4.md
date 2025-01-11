@@ -158,9 +158,11 @@ console.log();
 1. Usa las funciones flecha con los métodos `map` y `reduce` para calcular la suma de los cuadrados de los números en un arreglo.
 
 ```javascript
+
 const numeros2 = [1, 2, 3, 4, 5];
 const sumaCuadrados = numeros2
-    .map((num) =>clearmulador, valor) => acumulador + valor, 0);
+    .map((num) => num * num)  
+    .reduce((acumulador, valor) => acumulador + valor, 0);  
 
 console.log("Map & Reduce")
 console.log(sumaCuadrados);
