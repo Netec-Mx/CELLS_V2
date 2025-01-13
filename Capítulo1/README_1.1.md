@@ -11,8 +11,9 @@ Al finalizar esta práctica, serás capaz de:
 
 ## Instrucciones 
 
-- Relaciona los siguientes términos con sus definiciones. Al finalizar la actividad, tu instructor revisará las respuestas correctas y resolverá cualquier duda para garantizar una comprensión completa.
+Relaciona los siguiente términos. Al finalizar la actividad, las respuestas correctas serán discutidas y aclaradas por tu instructor para asegurar tu comprensión.  
 
+---
 
 **Término** | **Definición**  
 --- | ---  
