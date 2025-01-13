@@ -11,8 +11,11 @@ Al finalizar esta práctica, serás capaz de:
 
 - Relaciona los siguiente términos. Al finalizar la actividad, las respuestas correctas serán discutidas y aclaradas por tu instructor para asegurar tu comprensión.  
 
+
 <br/>
+
 ---
+
 <br/>
 
 **Término** | **Definición**  
