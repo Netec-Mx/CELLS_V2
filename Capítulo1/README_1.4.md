@@ -7,7 +7,7 @@ Al finalizar la práctica, serás capaz de:
 
 
 ## Duración aproximada:
-- 15 minutos.
+- 20 minutos.
 
 
 ## Instrucciones 
