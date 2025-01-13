@@ -6,7 +6,7 @@ Al finalizar esta práctica, serás capaz de:
 - Reafirmar y fortalecer tu comprensión sobre el protocolo HTTP.
 
 ## Duración aproximada:
-- 15 minutos.
+- 20 minutos.
 
 ## Instrucciones 
 
