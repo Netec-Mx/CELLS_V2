@@ -14,7 +14,7 @@ Al finalizar esta práctica, serás capaz de:
 - Relaciona los siguientes términos con sus definiciones. Al finalizar la actividad, tu instructor revisará las respuestas correctas y resolverá cualquier duda para garantizar una comprensión completa.
 
 
-| **Término**                     | **Definición**                                                                                                     |
+| **Término**                     |**Definición**                                                                                                     |
 |---------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | 1. **Métodos POST**                | A. Propiedad de algunos métodos HTTP (como GET, PUT y DELETE) donde la misma operación realizada varias veces tiene el mismo efecto. |
 | 2. **Métodos GET**                 | B. Pequeños archivos de texto enviados por el servidor al cliente para almacenar datos como sesiones, preferencias o autenticación.  |
