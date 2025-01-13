@@ -20,7 +20,7 @@ Al finalizar esta práctica, serás capaz de:
 <br/>
 
 
-| **Término **         | **Definición**                  |
+| **Término**         | **Definición**                  |
 |--------------------------------|-----------------------------------------|
 | 1. Patrones de Diseño          | A. Las subclases deben poder ser utilizadas en lugar de sus clases base sin alterar el comportamiento del programa.        |
 | 2. Patrones Creacionales       | B. Patrón creacional que garantiza que una clase tenga una única instancia y proporciona un punto de acceso global a ella. |
