@@ -22,7 +22,7 @@ Al finalizar la práctica, serás capaz de:
 <br/>
 
 
-| **Término ** | **Definición **                  |
+| **Término** | **Definición**                  |
 |-------------------------|-----------------------------------------|
 | 1. Bitbucket           | A. Plataforma de computación en la nube ofrecida por Microsoft. |
 | 2. ECMAScript          | B. Comando de Git que sube los cambios confirmados al repositorio remoto. |
