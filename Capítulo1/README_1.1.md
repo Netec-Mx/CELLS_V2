@@ -1,9 +1,7 @@
 # Práctica 1.1 Conocimientos Generales I
 
 ## Objetivo:
-
 Al finalizar esta práctica, serás capaz de:
-
 - Reafirmar y fortalecer tu comprensión teórica sobre los principios fundamentales de la Programación Orientada a Objetos (POO).
 
 ## Duración aproximada:
@@ -11,9 +9,11 @@ Al finalizar esta práctica, serás capaz de:
 
 ## Instrucciones 
 
-Relaciona los siguiente términos. Al finalizar la actividad, las respuestas correctas serán discutidas y aclaradas por tu instructor para asegurar tu comprensión.  
+- Relaciona los siguiente términos. Al finalizar la actividad, las respuestas correctas serán discutidas y aclaradas por tu instructor para asegurar tu comprensión.  
 
+<br/>
 ---
+<br/>
 
 **Término** | **Definición**  
 --- | ---  

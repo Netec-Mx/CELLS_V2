@@ -3,7 +3,7 @@
 ## Objetivo:
 
 Al finalizar esta práctica, serás capaz de:
-- Reafirmar y fortalecer tu comprensión sobre el protocolo HTTP.
+- Reafirmar y fortalecer tu comprensión sobre el protocolo Patrones de Diseño.
 
 ## Duración aproximada:
 - 15 minutos.
@@ -11,6 +11,7 @@ Al finalizar esta práctica, serás capaz de:
 ## Instrucciones 
 
 - Relaciona los siguientes términos con sus definiciones. Al finalizar la actividad, tu instructor revisará las respuestas correctas y resolverá cualquier duda para garantizar una comprensión completa.
+
 
 <br/>
 ---
@@ -35,4 +36,6 @@ Al finalizar esta práctica, serás capaz de:
 | 14. Patrón Factory Method     | N. Las entidades de software deben estar abiertas a la extensión, pero cerradas a la modificación.                       |
 | 15. Patrón Observer           | O. Una clase no debe ser forzada a depender de interfaces que no utiliza.                                              |
 | 16. Patrón Publish/Subscribe  | P. Los módulos de alto nivel no deben depender de módulos de bajo nivel; ambos deben depender de abstracciones.         |
+
+--- 
 
