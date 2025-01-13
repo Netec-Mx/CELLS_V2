@@ -2,7 +2,7 @@
 
 ## Objetivo:
 Al finalizar esta práctica, serás capaz de:
-- Reafirmar y fortalecer tu comprensión teórica sobre los principios fundamentales de la Programación Orientada a Objetos (POO).
+- Reafirmar y fortalecer tu comprensión teórica sobre los principios fundamentales de la Programación Orientada a Objetos (POO). 
 
 ## Duración aproximada:
 - 20 minutos.
