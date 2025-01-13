@@ -4,7 +4,7 @@
 
 Al finalizar esta práctica, serás capaz de:
 
-- Reafirmar y fortalecer tu comprensión sobre el protocolo HTTP
+- Reafirmar y fortalecer tu comprensión sobre el protocolo HTTP.
 
 ## Duración aproximada:
 - 15 minutos.
@@ -26,6 +26,7 @@ Al finalizar esta práctica, serás capaz de:
 | 8. **Partes de una Petición HTTP** | H. Encabezado HTTP utilizado para enviar credenciales al servidor para autenticación (por ejemplo, tokens o credenciales básicas).   |
 | 9. **Métodos que usan Body**       | I. Incluye línea de solicitud, encabezados, línea vacía y cuerpo opcional (en algunos métodos como POST y PUT).        |
 | 10. **Formato JSON**                | J. Método HTTP utilizado para solicitar recursos del servidor. No incluye cuerpo y no debe modificar el estado del servidor.  |
-| 11. **Cookies**                     | K. Formato ligero de intercambio de datos basado en texto, estructurado como pares clave-valor. Usado frecuentemente en APIs. |
+| 11. **Cookies**                     | K. Cross-Origin Resource Sharing, Es una política de seguridad implementada en los servidores web.
 | 12. **Códigos de Estado HTTP**      | L. Método HTTP utilizado para eliminar un recurso específico en el servidor.      |
+| 13. **CORS**                        | M. Formato ligero de intercambio de datos basado en texto, estructurado como pares clave-valor. Usado frecuentemente en APIs. |
 
