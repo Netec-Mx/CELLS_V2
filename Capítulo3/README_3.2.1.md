@@ -1,6 +1,6 @@
 # Práctica 3.2.1 Estilos en Lit
 
-## Objetivo de la práctica:
+## Objetivo:
 Al finalizar la práctica, serás capaz de:
 - Definir estilos CSS dentro de un componente Lit.
 - Aplicar estilos CSS a componentes Lit utilizando clases dinámicas para modificar la apariencia de los elementos en tiempo de ejecución.

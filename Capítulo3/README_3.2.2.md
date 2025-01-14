@@ -1,6 +1,6 @@
 # Práctica 3.2.2 Eventos & Reactividad
 
-## Objetivo de la práctica:
+## Objetivo:
 Al finalizar la práctica, serás capaz de:
 - Crear un componente interactivo que gestione eventos del usuario.
 - Implementar un componente Lit que maneja eventos de forma reactiva, actualizando el estado interno y reflejando los cambios en la interfaz de usuario.

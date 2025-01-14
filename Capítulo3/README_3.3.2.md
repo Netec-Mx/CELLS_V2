@@ -1,6 +1,6 @@
 # Práctica 3.3.2. Consumiendo APIs REST con Fetch y Renderizado Dinámico en Lit
 
-## Objetivo de la práctica:
+## Objetivo:
 Al finalizar la práctica, serás capaz de:
 - Consumir datos de una API REST utilizando la Fetch API en un componente de Lit, y renderizar dinámicamente estos datos en el DOM de manera eficiente.
  

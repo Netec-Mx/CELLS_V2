@@ -1,6 +1,6 @@
 # Práctica 2.2 Manejo Avanzado de Datos en JavaScript
 
-## Objetivo de la práctica:
+## Objetivo:
 Al finalizar la práctica, serás capaz de:
 - Aplicar métodos avanzados de manipulación de datos y operadores en JavaScript, incluyendo el uso de estructuras como Object, Map, Set, y operadores avanzados como destructuración, spread/rest, y ternarios, para escribir código eficiente y expresivo.
 

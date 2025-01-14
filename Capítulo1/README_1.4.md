@@ -1,6 +1,6 @@
 # Práctica 1.4 Conocimientos Generarles IV
 
-## Objetivo de la práctica:
+## Objetivo:
 Al finalizar la práctica, serás capaz de:
 
 - Relacionar términos clave y conceptos fundamentales en tecnologías y desarrollo de software.

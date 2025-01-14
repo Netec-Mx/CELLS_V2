@@ -1,7 +1,6 @@
 # Práctica 1.3 Conocimientos Generales III
 
 ## Objetivo:
-
 Al finalizar esta práctica, serás capaz de:
 - Reafirmar y fortalecer tu comprensión sobre el protocolo Patrones de Diseño.
 

@@ -1,6 +1,6 @@
 # Práctica 2.4.2  Manejo Asíncrono de Datos con Async/Await y Fetch
 
-## Objetivo de la práctica:
+## Objetivo:
 Al finalizar esta práctica, serás capaz de:
 1. Utilizar `fetch` para realizar llamadas HTTP y obtener datos de una API.
 2. Manejar datos asíncronos utilizando promesas.

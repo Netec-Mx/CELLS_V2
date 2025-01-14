@@ -1,6 +1,6 @@
 # Práctica 3.3.3 Proyecto Final
 
-## Objetivo de la práctica:
+## Objetivo:
 Al finalizar la práctica, serás capaz de:
 
 - Integrar y aplicar los conceptos y herramientas clave estudiados a lo largo del curso, diseñando y desarrollando un proyecto completo en Lit. Esto incluirá la creación de componentes web modulares, el manejo de datos asíncronos a través de la Fetch API, el renderizado dinámico eficiente, y la implementación de estilos avanzados para mejorar la experiencia de usuario.

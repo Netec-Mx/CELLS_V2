@@ -1,6 +1,6 @@
 # Práctica 3.3.1 Slots
 
-## Objetivo de la práctica:
+## Objetivo:
 Al finalizar la práctica, serás capaz de:
 - Implementar y utilizar slots en un componente de Lit para crear estructuras flexibles y reutilizables, permitiendo que los usuarios personalicen partes del contenido interno del componente.
   

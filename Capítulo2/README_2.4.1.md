@@ -1,7 +1,6 @@
 # Prática 2.4 Explorando las funciones en JavaScript
 
-## Objetivo de la práctica:
-
+## Objetivo:
 Al finalizar esta práctica, serás capaz de implementar y aplicar diversos tipos de funciones en JavaScript, aprovechando conceptos clave como hoisting, recursividad, funciones autoejecutables (IFE), funciones flecha, anónimas y con parámetros predeterminados.
 
 

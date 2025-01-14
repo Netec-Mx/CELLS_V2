@@ -1,6 +1,6 @@
 # Prática 2.5 DOM
 
-## Objetivo de la práctica:
+## Objetivo:
 Al finalizar la práctica, serás capaz de:
 - Manipular elementos del DOM seleccionándolos y modificando su contenido y estilos.
 - Gestionar clases de elementos del DOM utilizando la API classList.

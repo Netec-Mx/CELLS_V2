@@ -1,7 +1,6 @@
 # Práctica 1.2 Conocimientos Generales II
 
 ## Objetivo:
-
 Al finalizar esta práctica, serás capaz de:
 - Reafirmar y fortalecer tu comprensión sobre el protocolo HTTP.
 

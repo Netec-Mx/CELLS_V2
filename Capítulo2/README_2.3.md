@@ -1,7 +1,7 @@
 
 # **Práctica 2.3 Implementando Programación Orientada a Objetos en JavaScript**
 
-## Objetivo de la práctica:
+## Objetivo:
 Al finalizar la práctica, serás capaz de:
 
 - Implementar clases, herencia, métodos, constructores, y métodos estáticos utilizando programación orientada a objetos en JavaScript. 

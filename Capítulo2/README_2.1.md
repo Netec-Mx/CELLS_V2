@@ -1,8 +1,7 @@
 
-# **Práctica 2.1 Fundamentos**
+# Práctica 2.1 Fundamentos de JavaScript
 
 ## Objetivo 
-
 Al finalizar la práctica, serás capaz de:
 - Declarar variables utilizando `var`, `let` y `const`
 - Identificar y manejar tipos de datos primitivos y estructuras complejas, 

@@ -1,6 +1,6 @@
 # Práctica 3.1 Lit
 
-## Objetivo de la práctica:
+## Objetivo:
 Al finalizar la práctica, serás capaz de:
 - Crear un componente básico utilizando Lit y renderizarlo en una página web.
 - Entender el ciclo de vida de un componente Lit.
