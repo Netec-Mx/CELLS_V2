@@ -6,7 +6,7 @@ Al finalizar la práctica, serás capaz de:
 - Aplicar estilos CSS a componentes Lit utilizando clases dinámicas para modificar la apariencia de los elementos en tiempo de ejecución.
 - Implementar estilos CSS en un componente Lit y utilizar clases dinámicas para modificar la apariencia de los elementos en respuesta ae ventos o estados internos.
 - Implementar un componente Lit con soporte para temas visuales, y personalización mediante propiedades y variables CSS.
-
+- Implementar un diseño con CSS Grid utilizando propiedades como `grid-template-columns`, `grid-template-rows`, `grid-column`
  
 ## Duración aproximada:
 - 125 minutos.
@@ -687,6 +687,145 @@ toggleBold() {
 
 <br/><br/>
 
+### Tarea 7 Crear un Componente Lit con Diseño de Cuadrícula (CSS Grid)
+
+#### Paso 1. **Crear un Componente Lit**
+1. Dentro de la carpeta `src`, crea un nuevo archivo llamado `bb-grid.js`.
+
+2. Define un nuevo componente Lit básico:
+   ```javascript
+   import { LitElement, html, css } from 'lit';
+
+   export class MyGrid extends LitElement {
+     static styles = css`
+       /* Estilos aquí */
+     `;
+
+     render() {
+       return html`
+         <div class="grid-container">
+           <div class="grid-item">1</div>
+           <div class="grid-item">2</div>
+           <div class="grid-item">3</div>
+           <div class="grid-item">4</div>
+           <div class="grid-item">5</div>
+           <div class="grid-item">6</div>
+         </div>
+       `;
+     }
+   }
+
+   customElements.define('bb-grid', BBGrid);
+   ```
+
+#### Paso 2. **Definir Estilos con CSS Grid**
+
+En el bloque `static styles`, implementa el diseño de cuadrícula:
+
+1. **Estiliza el contenedor principal (`.grid-container`)**:
+
+   - Declara el contenedor como una cuadrícula usando `display: grid`.
+
+   - Define **3 columnas iguales** y **4 filas con alturas específicas**.
+
+   ```css
+   .grid-container {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: 100px 100px 200px 200px;
+     gap: 10px; /* Espaciado entre celdas */
+     background-color: lightgray; /* Color de fondo del contenedor */
+     padding: 10px;
+   }
+   ```
+
+2. **Estiliza los elementos de la cuadrícula (`.grid-item`)**:
+
+   - Da color y bordes a cada celda.
+
+   - Aplica un diseño centrado en el texto.
+
+   ```css
+   .grid-item {
+     background-color: white;
+     border: 1px solid #ccc;
+     text-align: center;
+     line-height: 100px; /* Alinea texto verticalmente */
+     font-size: 18px;
+   }
+   ```
+
+3. **Ejemplo avanzado con posición personalizada**:
+
+   - Asigna un elemento para que ocupe varias columnas o comience en una posición específica.
+
+   ```css
+   .grid-item:nth-child(1) {
+     grid-column: 1 / 3; /* Ocupa columnas 1 y 2 */
+   }
+   ```
+
+#### Paso 3. **Probar el Componente**
+
+1. Importa y usa tu componente en el archivo `index.html`:
+   ```html
+   <script type="module" src="./src/bb-grid.js"></script>
+   <bb-grid></bb-grid>
+   ```
+
+2. Ejecuta el proyecto o regarga la página en el navegador.
+   ```bash
+   npm start
+   ```
+
+3. Abre el navegador y/o verifica el diseño de la cuadrícula.
+
+
+
+#### Paso 4. **Extra: Mejoras Opcionales**
+
+- **Hacer la cuadrícula responsiva**:
+
+  Cambia las columnas según el tamaño de la pantalla usando `media queries`:
+
+  ```css
+  @media (max-width: 600px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  ```
+
+- **Añadir interacción**:
+
+  Aplica efectos al pasar el cursor sobre las celdas:
+
+  ```css
+  .grid-item:hover {
+    background-color: lightblue;
+    transform: scale(1.1);
+  }
+  ```
+
+#### Paso 5. **Contesta lo siguiente**
+ 
+1. ¿Cuántas columnas tiene la cuadrícula?
+
+2. ¿Cuántas filas tiene la cuadrícula?
+
+3. ¿Cómo están distribuidas las columnas de la cuadrícula?
+
+4. ¿Cuáles son las alturas de las filas en la cuadrícula?
+
+5. ¿Qué aspecto tienen las celdas de la cuadrícula?
+
+6. ¿Qué sucede si aplicas estilos específicos a una celda?
+
+7. ¿Es posibile personalizar el diseño del componente?
+
+
+<br/><br/>
+
 ## Resultados Esperados
 
 - Captura de pantalla de la Tarea 1. Estilos en Lit
@@ -718,6 +857,12 @@ toggleBold() {
 
 ![Resultados Esperados](../images/image3_2_1_5.png)
 
+<br/>
+
+- Captura de pantalla de la Tarea 7. Crear un Componente Lit con Diseño de Cuadrícula (CSS Grid) 
+
+
+![Resultados Esperados](../images/image3_2_1_7.png)
 
 
 
