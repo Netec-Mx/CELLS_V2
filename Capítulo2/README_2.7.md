@@ -1,7 +1,8 @@
 # Prática 2.7 DOM III
 
 ## Objetivo:
-Al finalizar esta práctica, serás capaz de asociar y manipular dinámicamente elementos <datalist> y <input> en el DOM, así como comprender cuándo usar <datalist> en lugar de <select>
+
+Al finalizar esta práctica, serás capaz de asociar y manipular dinámicamente elementos `<datalist>` y `<input>` en el DOM, así como comprender cuándo usar `<datalist>` en lugar de `<select>`
 
 
 ## Duración aproximada:
