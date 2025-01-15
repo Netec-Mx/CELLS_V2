@@ -9,11 +9,6 @@ Al finalizar esta práctica, serás capaz de:
 5. Manipular datos obtenidos de una API para mostrarlos de manera organizada en una página web.
  
 
-## Objetivo Visual 
-Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es la siguiente imagen. 
-
-![diagrama1](../images/img1.png)
-
 ## Duración aproximada:
 - 35 minutos.
  
