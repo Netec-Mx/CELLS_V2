@@ -1,4 +1,4 @@
-# Práctica 3.3.2. Consumiendo APIs REST con Fetch y Renderizado Dinámico en Lit
+# Práctica 3.3.2 Consumiendo APIs REST con Fetch y Renderizado Dinámico en Lit
 
 ## Objetivo:
 Al finalizar la práctica, serás capaz de:

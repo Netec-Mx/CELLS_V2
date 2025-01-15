@@ -1,5 +1,5 @@
 
-# **Práctica 2.3 Implementando Programación Orientada a Objetos en JavaScript**
+# Práctica 2.3 Implementando Programación Orientada a Objetos en JavaScript
 
 ## Objetivo:
 Al finalizar la práctica, serás capaz de:
