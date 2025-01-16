@@ -1,8 +1,8 @@
-# CELLS para proveedores
+# Fundamentos para Cells: Lit & JavaScript
 
 **Plataforma de Laboratorios**
 
-Bienvenido a la **Plataforma de Laboratorios** del curso **Fundamentos para CELLS: Lit y JavaScript**. Aquí podrás explorar diferentes tecnologías a través de prácticas guiadas. ¡Desarrolla tus habilidades y lleva tus conocimientos al siguiente nivel!
+Bienvenido a la **Plataforma de Laboratorios** del curso **Fundamentos para Cells: Lit & JavaScript**. Aquí podrás explorar diferentes tecnologías a través de prácticas guiadas. ¡Desarrolla tus habilidades y lleva tus conocimientos al siguiente nivel!
 
 ---
 
