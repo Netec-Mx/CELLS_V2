@@ -1,206 +1,89 @@
-# Funciones que podría usar el instructor
-En este documento se muestran algunas muestras de formatos que se pueden usar en el archivo **README.me** que pueden ser de ayuda para el instructor
+# CELLS para proveedores
 
-- [Fragmentos de código](#fragmentos-de-codigo)
-- [Listas](#listas)
-- [Tablas](#tablas)
-- [Insertar imágenes](#imagenes)
-- [Alertas](#alertas)
+**Plataforma de Laboratorios**
 
-# Fragmentos de codigo
+Bienvenido a la **Plataforma de Laboratorios** del curso **Fundamentos para CELLS: Lit y JavaScript**. Aquí podrás explorar diferentes tecnologías a través de prácticas guiadas. ¡Desarrolla tus habilidades y lleva tus conocimientos al siguiente nivel!
 
+---
 
-## Bloques de código
-Para agregar algún fragmento de código debemos de usar la siguiente sintáxis:
+## 🌟 **Lista de Laboratorios**
 
+Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia práctica. Haz clic en los enlaces para comenzar.
 
-### Python
+---
+ 
+## Índice:
 
-```python
-import datetime
-
-def str2date(sf:str):#"2020-05-08"
-    datos=sf.split('-')#['2020', '05', '08']
-                #'2020':str->2020:int, '05':str->05:int, '08':str->05:int
-    fecha=datetime.date(int(datos[0]), int(datos[1]), int(datos[2]))
-    return fecha
-
-sf=input("ingrese la fecha YYYY-MM-DD: ")
-fecha=str2date(sf)
-print(fecha)
-print(type(fecha))
-```
-
-### Java
-```java
-public void cleanup() {
-        try {
-            if (connection != null)
-                connection.close();
-        } catch (Exception e) {
-            System.out.println("Excepción capturada: ");
-            e.printStackTrace();
-        }
-    }
-```
+ - [Práctica 1.1 Conocimientos generales I .](./Capítulo1/README_1.1.md)
+     - ⏱️ **Duración estimada**:  20 minutos.
 
 
-### shell
-```shell
-#!/bin/sh
-
-CONTADOR=0
-until [ $CONTADOR – ge 3]]; do
-    echo El contador es $CONTADOR
-    CONTADOR=$(($CONTADOR+1))
-done
-```
-
-### Ruby
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
-
-### HTML
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
-
-```
-
-### Javascript
-
-```javascript
-var database=db.getSiblingDB("database")
-var collection=database.getCollection("people")
-
-var data=[
-    {name:"edgar"},
-    {name:"juan"},
-    {name:"alicia"}
-]
-
-data.forEach(t=>{
-    console.log(t)
-    var result=collection.insertOne(t)
-    console.log(result)
-})
-
-```
-# Listas
-
-## Lista simple
-- elemento 1
-- elemento 2
-- elemento 3
-
-## Lista números
-1. elemento 1
-2. elemento 2
-3. elemento 3
-
-## Lista anidada
-- Elemento principal
-    - Elemento interno 1
-    - Elemento interno 2
-        - elemento 
-        - elemento
-    - elemento interno 3
-
-## Lista de tareas
-- [ ] tarea 1
-- [x] tarea 2
-- [ ] tarea 3 
-- [ ] \(Optional) tarea opcional 
-
-# Tablas
-
-## Tabla simple
-
-| título columna 1  | título columna 2|
-| ------------- | ------------- |
-| contenido 1  | contenido 2  |
-| contenido 3  | contenido 4  |
+ - [Práctica 1.2. Conocimientos generales II.](./Capítulo1/README_1.2.md)
+     - ⏱️ **Duración estimada**: 20 minutos.
 
 
-## Tabla con formato en las columnas
-
-| Command | Description |
-| --- | --- |
-| `git status` | List all *new or modified* files |
-| `git diff` | Show file differences that **haven't been** staged |
+ - [Práctica 1.3. Conocimientos generales III.](./Capítulo1/README_1.3.md)
+     - ⏱️ **Duración estimada**: 20 minutos.
 
 
-## Alinear contenido en tabla
-| Left-aligned | Center-aligned | Right-aligned |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
-
-# Imagenes
-
-Para insertar una imágen se usa la siguiente sintáxis:
-
-```
-![descripción de la imagen](url imagen)
-```
-El url de la imágen puede ser de la siguiente forma:
-
-- Si la imágen esta dentro de la misma rama se usa la siguiente sintaxis:
-    ```
-     ![description](/assets/images/imagen1.png)
-    ```
-    - Donde:
-        - la ruta */assets/images* esta dentro de la rama donde se encuentra el archivo **README.md**
-
-- Si la imágen esta en otra rama se usa la siguiente sintaxis:
-    ```
-    ![description](/../name_branch/assets/images/imagen1.png)
-    ```
-    - Donde: 
-        - La ruta */../name_branch/assets/images/* esta dentro de el mismo repositorio pero es una rama diferente. 
-
-- Si la imagén esta en internet se usa la siguiente sintaxis: 
-    ``` 
-     ![description](https://url/imagen.png)
-    ```
-- Si se quiere controlar el tamaño de la imágen se debe usar html, de la siguiente forma:
-    ``` html
-    <img src="url image" width="200" height="200">
-     
-    ```
-    - Donde: 
-        - En el html se pueden editar los siguiente elementos: 
-            - **url image**:  La ruta de la imágen
-            - **width**: Ancho de la imágen en pixeles
-            - **height**: Alto de la imágen en pixeles
+ - [Práctica 1.4. Conocimientos generales IV.](./Capítulo1/README_1.4.md)
+     - ⏱️ **Duración estimada**: 20 minutos.
 
 
-# Alertas
+ - [Práctica 2.1 Fundamentos de JavaScript.](./Capítulo2/README_2.1.md)
+     - ⏱️ **Duración estimada**: 35 minutos.
 
-> [!NOTE]
-> útil para agregar alguna nota extra
 
-> [!TIP]
-> útil para dar algún tip
+ - [Práctica 2.2 Manejo avanzado de datos en JavaScript.](./Capítulo2/README_2.2.md)
+   - ⏱️ **Duración estimada**: 35 minutos.
 
-> [!IMPORTANT]
-> útil para algún recordatorio
 
-> [!WARNING]
-> útil para alertar a los alumnos
+ - [Práctica 2.3 Implementando programación orientada a objetos en JavaScript.](./Capítulo2/README_2.3.md) 
+   - ⏱️ **Duración estimada**: 35 minutos.
 
-> [!CAUTION]
-> útil para sugerencias y precauciones.
+
+ - [Práctica 2.4.1. Explorando las funciones en JavaScript.](./Capítulo2/README_2.4.1.md)  
+ - ⏱️ **Duración estimada**: 35 minutos.
+
+   
+ - [Práctica 2.4.2. Manejo asíncrono de datos con Async/Await y Fetch.](./Capítulo2/README_2.4.2.md)
+   - ⏱️ **Duración estimada**: 35 minutos.
+
+
+ - [Práctica 2.5 DOM.](./Capítulo2/README_2.5.md)
+   - ⏱️ **Duración estimada**: 40 minutos.
+
+
+ - [Práctica 2.6 DOM II.](./Capítulo2/README_2.6.md)
+   - ⏱️ **Duración estimada**: 20 minutos.
+
+
+ - [Práctica 2.7 DOM III.](./Capítulo2/README_2.7.md)
+   - ⏱️ **Duración estimada**: 20 minutos.
+
+
+ - [Práctica 3.1 Lit.](./Capítulo3/README_3.1.md)
+   - ⏱️ **Duración estimada**: 120 minutos.
+
+
+ - [Práctica 3.2.1. Estilos en Lit.](./Capítulo3/README_3.2.1.md)
+   - ⏱️ **Duración estimada**: 120 minutos.
+
+
+ - [Práctica 3.2.2. Eventos & reactividad.](./Capítulo3/README_3.2.2.md)
+   - ⏱️ **Duración estimada**: 60 minutos.
+
+
+ - [Práctica 3.3.1. Slots.](./Capítulo3/README_3.3.1.md)
+   - ⏱️ **Duración estimada**: 60 minutos.
+
+
+ - [Práctica 3.3.2. Consumiendo APIs REST con Fetch y Renderizado Dinámico en Lit.](./Capítulo3/README_3.3.2.md)
+   - ⏱️ **Duración estimada**: 60 minutos.
+
+
+ - [Práctica 3.3.3. Proyecto Final.](./Capítulo3/README_3.3.3.md)
+  
+ - [Práctica 3.3.3_b Proyecto final (alternativo) "Administrador de Eventos con Lit".](./Capítulo3/READNE_3.3.3_b.md)
+
+    - ⏱️ **Duración estimada**: 120 minutos.
