@@ -1,41 +1,34 @@
-# Nombre del laboratorio 
+# Práctica 1.1 Conocimientos Generales I
 
-## Objetivo de la práctica:
-Al finalizar la práctica, serás capaz de:
-- Objetivo1
-- Objetivo2
-- Objetivo3
-
-## Objetivo Visual 
-Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es la siguiente imagen. 
-
-![diagrama1](../images/img1.png)
+## Objetivo:
+Al finalizar esta práctica, serás capaz de:
+- Reafirmar y fortalecer tu comprensión teórica sobre los principios fundamentales de la Programación Orientada a Objetos (POO). 
 
 ## Duración aproximada:
-- xx minutos.
-
-## Tabla de ayuda:
-Agregar una tabla con la información que pueda requerir el participante durante el laboratorio, como versión de software, IPs de servers, usuarios y credenciales de acceso.
-| Contraseña | Correo | Código |
-| --- | --- | ---|
-| Netec2024 | edgardo@netec.com | 123abc |
+- 20 minutos.
 
 ## Instrucciones 
-<!-- Proporciona pasos detallados sobre cómo configurar y administrar sistemas, implementar soluciones de software, realizar pruebas de seguridad, o cualquier otro escenario práctico relevante para el campo de la tecnología de la información -->
-### Tarea 1. Descripción de la tarea a realizar.
-Paso 1. Debe de relatar el instructor en verbo infinito, claro y conciso cada actividad para ir construyendo paso a paso en el objetivo de la tarea.
 
-Paso 2. <!-- Añadir instrucción -->
+- Relaciona los siguiente términos. Al finalizar la actividad, las respuestas correctas serán discutidas y aclaradas por tu instructor para asegurar tu comprensión.  
 
-Paso 3. <!-- Añadir instrucción -->
 
-### Tarea 2. Descripción de la tarea a realizar.
-Paso 1. Debe de relatar el instructor en verbo infinito, claro y conciso cada actividad para ir construyendo paso a paso en el objetivo de la tarea.
+<br/>
 
-Paso 2. <!-- Añadir instrucción -->
+---
 
-Paso 3. <!-- Añadir instrucción -->
+<br/>
 
-### Resultado esperado
-En esta sección, se debe mostrar el resultado esperado de nuestro laboratorio
-![imagen resultado](../images/img3.png)
+**Término** | **Definición**  
+--- | ---  
+**1. Polimorfismo** | A. Identificar solo aquellos atributos y métodos que son relevantes para la clase dentro del sistema.  
+**2. Objeto** | B. La capacidad de derivar nuevas clases que adquieren atributos y métodos de una clase base.  
+**3. Herencia** | C. El plano o modelo para un objeto.  
+**4. Abstracción** | D. Ocultar métodos internos y datos para evitar el acceso directo desde fuera de la clase.  
+**5. Constructor** | E. Clases que no pueden ser instanciadas  
+**6. Encapsulamiento** | F. La medida en que una entidad (componente o clase) apoya un propósito singular dentro de un sistema.  
+**7. Composición, Uso, Agregación y Herencia** | G. La capacidad de determinar el método real que se llama en función del subtipo del objeto.  
+**8. Clase** | H. Una instancia de una clase.  
+**9. Acoplamiento** | I. Método especial que inicia los objetos de la clase.  
+**10. Cohesión** | J. Relaciones entre dos clases.  
+**11. Clase Abstracta** | K. El grado en que las clases dentro de nuestro sistema dependen unas de otras.
+

@@ -1,41 +1,96 @@
-# Nombre del laboratorio 
+# Práctica 3.3.3 Proyecto Final
 
-## Objetivo de la práctica:
+## Objetivo:
 Al finalizar la práctica, serás capaz de:
-- Objetivo1
-- Objetivo2
-- Objetivo3
 
-## Objetivo Visual 
-Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es la siguiente imagen. 
+- Integrar y aplicar los conceptos y herramientas clave estudiados a lo largo del curso, diseñando y desarrollando un proyecto completo en Lit. Esto incluirá la creación de componentes web modulares, el manejo de datos asíncronos a través de la Fetch API, el renderizado dinámico eficiente, y la implementación de estilos avanzados para mejorar la experiencia de usuario.
 
-![diagrama1](../images/img1.png)
+- Aplicar los conocimientos adquiridos durante el curso para desarrollar una aplicación funcional que incluya:
+    - Creación de componentes reutilizables.
+    - Manejo de estado reactivo.
+    - Consumo de datos de una API REST con Fetch.
+    - Renderizado dinámico basado en datos asíncronos.
+    - Estilización avanzada de componentes.
+    - Diseño responsivo.
+
 
 ## Duración aproximada:
-- xx minutos.
+- 120 minutos.
 
-## Tabla de ayuda:
-Agregar una tabla con la información que pueda requerir el participante durante el laboratorio, como versión de software, IPs de servers, usuarios y credenciales de acceso.
-| Contraseña | Correo | Código |
-| --- | --- | ---|
-| Netec2024 | edgardo@netec.com | 123abc |
+## **Requisitos del Proyecto**
 
-## Instrucciones 
-<!-- Proporciona pasos detallados sobre cómo configurar y administrar sistemas, implementar soluciones de software, realizar pruebas de seguridad, o cualquier otro escenario práctico relevante para el campo de la tecnología de la información -->
-### Tarea 1. Descripción de la tarea a realizar.
-Paso 1. Debe de relatar el instructor en verbo infinito, claro y conciso cada actividad para ir construyendo paso a paso en el objetivo de la tarea.
+### 1. **Gestión de Tareas:**
+   - Agregar nuevas tareas con un formulario.
+   - Listar tareas existentes.
+   - Marcar tareas como completadas o pendientes.
+   - Eliminar tareas.
 
-Paso 2. <!-- Añadir instrucción -->
+### 2. **Integración con API REST:**
+   - Consultar tareas desde una API REST al cargar la página.
+   - [Datos iniciales](https://raw.githubusercontent.com/Netec-Mx/CELLS_Proveedores/refs/heads/main/Cap%C3%ADtulo3/ProyectoFinal/datos.json)
+   - URL: [`https://raw.githubusercontent.com/Netec-Mx/CELLS_Proveedores/refs/heads/main/Cap%C3%ADtulo3/ProyectoFinal/datos.json`](https://raw.githubusercontent.com/Netec-Mx/CELLS_Proveedores/refs/heads/main/Cap%C3%ADtulo3/ProyectoFinal/datos.json)
+   - Guardar nuevas tareas en la API.
+   - Actualizar el estado de una tarea en la API.
+   - Eliminar tareas desde la API.
 
-Paso 3. <!-- Añadir instrucción -->
+### 3. **Diseño y Usabilidad:**
+   - Crear un diseño visualmente atractivo y responsivo.
+   - Usar estilos avanzados para mejorar la experiencia de usuario.
+   - Incorporar notificaciones visuales (como cambios de color o iconos) para tareas completadas.
 
-### Tarea 2. Descripción de la tarea a realizar.
-Paso 1. Debe de relatar el instructor en verbo infinito, claro y conciso cada actividad para ir construyendo paso a paso en el objetivo de la tarea.
+### 4. **Herramientas necesarias:**
+   - Node.js y npm instalados.
+   - Editor de código, como Visual Studio Code.
+   - Navegador moderno compatible con Web Components (Chrome, Firefox, Edge).
+   - Git
+   - Repositorio Remoto en GitHub, con acceso de lectura al instructor asignado.
 
-Paso 2. <!-- Añadir instrucción -->
+   <br/> <br/>
+   
+## **Instrucciones**
 
-Paso 3. <!-- Añadir instrucción -->
+### 1. **Configurar el Proyecto:**
+   - Crea un nuevo proyecto de Lit.
+   - Estructura los archivos y directorios de manera organizada.
 
-### Resultado esperado
-En esta sección, se debe mostrar el resultado esperado de nuestro laboratorio
-![imagen resultado](../images/img3.png)
+### 2. **Crear Componentes:**
+   - **Formulario de Tareas:** Un componente que permita a los usuarios ingresar nuevas tareas.
+   - **Lista de Tareas:** Un componente que renderice las tareas recuperadas de la API y permita actualizarlas o eliminarlas.
+   - **Tarjeta de Tarea:** Un componente reutilizable para mostrar información de cada tarea con opciones de interacción.
+
+### 3. **Conectar con la API REST:**
+   - Realiza peticiones para obtener, agregar, actualizar y eliminar tareas.
+   - Maneja errores de las peticiones de manera adecuada y notifica al usuario.
+
+### 4. **Implementar Funcionalidades:**
+   - Diseña el flujo de la aplicación para que las tareas se actualicen dinámicamente en la interfaz al realizar cambios (agregar, actualizar o eliminar).
+   - Usa propiedades observables y métodos de actualización para garantizar la reactividad.
+
+### 5. **Estilizar los Componentes:**
+   - Aplica estilos personalizados a cada componente.
+   - Asegúrate de que el diseño sea responsivo y accesible en diferentes tamaños de pantalla.
+
+### 6. **Integrar Funcionalidades Avanzadas:**
+   - Añade filtros para mostrar tareas completadas, pendientes o todas.
+   - Implementa un indicador visual para las tareas completadas.
+
+### 7. **Probar y Refinar:**
+   - Realiza pruebas funcionales para asegurarte de que todas las características trabajen correctamente.
+   - Optimiza el código para mejorar el rendimiento.
+
+<br/>
+
+### **Criterios de Evaluación**
+1. Correcta implementación de los componentes y su interacción.
+2. Uso adecuado de la Fetch API para consumir y manipular datos de la API REST.
+3. Aplicación de principios de diseño visual y responsivo.
+4. Manejo de errores y notificaciones para el usuario.
+5. Creatividad y personalización en la aplicación final.
+
+### **Entrega**
+Sube el proyecto a un repositorio de GitHub y comparte el enlace. Incluye un archivo README con:
+- Una descripción del proyecto.
+- Instrucciones para instalar y ejecutar la aplicación.
+- Cualquier detalle adicional relevante.
+
+Este proyecto final te permitirá demostrar tu dominio en Lit y su aplicación en un contexto real.
