@@ -1,4 +1,4 @@
-# Práctica 1.3 Conocimientos Generales III
+# Práctica 1.3. Conocimientos generales III
 
 ## Objetivo:
 Al finalizar esta práctica, serás capaz de:
@@ -7,17 +7,11 @@ Al finalizar esta práctica, serás capaz de:
 ## Duración aproximada:
 - 20 minutos.
 
-## Instrucciones 
+## Instrucciones: 
 
-- Relaciona los siguientes términos con sus definiciones. Al finalizar la actividad, tu instructor revisará las respuestas correctas y resolverá cualquier duda para garantizar una comprensión completa.
-
-
-<br/>
+1. Relaciona los siguientes términos con sus definiciones. Al finalizar la actividad, tu instructor revisará las respuestas correctas y resolverá cualquier duda para garantizar una comprensión completa.
 
 ---
-
-<br/>
-
 
 | **Término**         | **Definición**                  |
 |--------------------------------|-----------------------------------------|
@@ -37,6 +31,3 @@ Al finalizar esta práctica, serás capaz de:
 | 14. Patrón Factory Method     | N. Las entidades de software deben estar abiertas a la extensión, pero cerradas a la modificación.                       |
 | 15. Patrón Observer           | O. Una clase no debe ser forzada a depender de interfaces que no utiliza.                                              |
 | 16. Patrón Publish/Subscribe  | P. Los módulos de alto nivel no deben depender de módulos de bajo nivel; ambos deben depender de abstracciones.         |
-
---- 
-
