@@ -1,14 +1,13 @@
-# Prática 2.7 DOM III
+# Prática 2.7. DOM III
 
 ## Objetivo:
-
-Al finalizar esta práctica, serás capaz de asociar y manipular dinámicamente elementos `<datalist>` y `<input>` en el DOM, así como comprender cuándo usar `<datalist>` en lugar de `<select>`
-
+Al finalizar esta práctica, serás capaz de:
+- Asociar y manipular dinámicamente elementos `<datalist>` y `<input>` en el DOM, así como comprender cuándo usar `<datalist>` en lugar de `<select>`.
 
 ## Duración aproximada:
 - 15 minutos.
 
-## Instrucciones 
+## Instrucciones:
 
 ### **Tareas:**
 1. Crear un formulario que incluya un campo `<input>` asociado a un elemento `<datalist>`.
@@ -17,13 +16,13 @@ Al finalizar esta práctica, serás capaz de asociar y manipular dinámicamente 
    - Verificar y mostrar un mensaje en la consola cuando el usuario selecciona o escribe un valor en el `<input>`.
    - Explicar mediante un mensaje en la consola por qué usar `<datalist>` en lugar de `<select>`.
 
-#### Paso 1. **Configuración inicial:**
-   - Crea un archivo `practica2_7.html` con la estructura básica.
-   - Añade un formulario que incluya un campo `<input>` asociado a un elemento `<datalist>`.
+**Paso 1. Configuración inicial.**
+1. Crea un archivo `practica2_7.html` con la estructura básica.
+2. Añade un formulario que incluya un campo `<input>` asociado a un elemento `<datalist>`.
 
-#### Paso 2. **Estructura del HTML:**
+**Paso 2. Estructura del HTML.**
 
-- Copia el siguiente código en tu archivo:
+1. Copia el siguiente código en tu archivo:
   
    ```html
    <!DOCTYPE html>
@@ -50,9 +49,9 @@ Al finalizar esta práctica, serás capaz de asociar y manipular dinámicamente 
    </html>
    ```
 
-#### Paso 3. **Agregar funcionalidad con JavaScript:**
-   - Crea un archivo `practica2_7.js.js` en el mismo directorio.
-   - Escribe el siguiente código en `script.js` para asociar eventos al `<input>`:
+**Paso 3. Agregar funcionalidad con JavaScript.**
+1. Crea un archivo `practica2_7.js.js` en el mismo directorio.
+2. Escribe el siguiente código en `script.js` para asociar eventos al `<input>`:
 
    ```javascript
    document.addEventListener('DOMContentLoaded', () => {
@@ -69,18 +68,15 @@ Al finalizar esta práctica, serás capaz de asociar y manipular dinámicamente 
    });
    ```
 
-#### Paso 4. **Prueba tu solución:**
-   - Abre el archivo `practica2_7.html` en un navegador.
-   - Escribe un valor en el campo de entrada o selecciona una opción de las sugerencias predefinidas.
-   - Observa cómo se registran mensajes en la consola.
+**Paso 4. Prueba tu solución.**
+1. Abre el archivo `practica2_7.html` en un navegador.
+2. Escribe un valor en el campo de entrada o selecciona una opción de las sugerencias predefinidas.
+3. Observa cómo se registran mensajes en la consola.
 
-#### Paso 5. **Desafío adicional (opcional):**
-   - Añade un botón al formulario que, al ser presionado, muestre en la consola el valor actual del campo `<input>`.
+**Paso 5. Desafío adicional (opcional).**
+1. Añade un botón al formulario que, al ser presionado, muestre en la consola el valor actual del campo `<input>`.
 
-<br/>
-<br/>
-
-## Resultado Esperado
+## Resultado esperado:
 
 - Captura de pantalla con la salida de esta práctica.
 
