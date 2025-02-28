@@ -1,4 +1,4 @@
-# Práctica 1.4. Conocimientos generarles IV
+# Práctica 1.4. Conocimientos generales IV
 
 ## Objetivo:
 Al finalizar la práctica, serás capaz de:
