@@ -1,4 +1,4 @@
-# Práctica 2.4.2  Manejo Asíncrono de Datos con Async/Await y Fetch
+# Práctica 2.4.2. Manejo Asíncrono de Datos con Async/Await y Fetch
 
 ## Objetivo:
 Al finalizar esta práctica, serás capaz de:
@@ -8,22 +8,20 @@ Al finalizar esta práctica, serás capaz de:
 4. Manejar errores en llamadas asíncronas y mostrar mensajes adecuados al usuario.
 5. Manipular datos obtenidos de una API para mostrarlos de manera organizada en una página web.
  
-
 ## Duración aproximada:
 - 35 minutos.
  
-## Instrucciones Generales
+## Instrucciones generales:
 
 1. **Archivos iniciales**: Crea un archivo `practica2_5.html` y un archivo `practica2_5.js` donde escribirás el código JavaScript.
 
 2. Utiliza la API [https://reqres.in/](https://reqres.in/) para obtener datos de usuarios y probar la creación de un nuevo usuario.
 
+## Instrucciones:
 
-## Instrucciones
+### **Tarea 1: Obtener y mostrar usuarios.**
 
-### **Tarea 1: Obtener y Mostrar Usuarios**
-
-#### Paso 1. **En `practica2_4_2.html`, agrega una estructura básica con un botón y una tabla para mostrar usuarios:**
+**Paso 1. En `practica2_4_2.html`, agrega una estructura básica con un botón y una tabla para mostrar usuarios:**
 
       ```html
       <!DOCTYPE html>
@@ -51,7 +49,7 @@ Al finalizar esta práctica, serás capaz de:
       </html>
       ```
 
-#### Paso 2. **En `app.js`, escribe la función para obtener los datos de usuarios:**
+**Paso 2. En `app.js`, escribe la función para obtener los datos de usuarios:**
 
       ```javascript
       async function fetchUsers() {
@@ -79,9 +77,9 @@ Al finalizar esta práctica, serás capaz de:
       ```
  
 
-### **Tarea 2: Crear un Usuario**
+### **Tarea 2: Crear un usuario**.
 
-#### Paso 1. ** En `index.html`, agrega un formulario para ingresar los datos del nuevo usuario:**
+**Paso 1. En `index.html`, agrega un formulario para ingresar los datos del nuevo usuario:**
 
       ```html
       <h2>Crear Usuario</h2>
@@ -93,7 +91,7 @@ Al finalizar esta práctica, serás capaz de:
       <div id="createdUser"></div>
       ```
 
-#### Paso 2. **En `app.js`, escribe la lógica para crear un usuario:**
+**Paso 2. En `app.js`, escribe la lógica para crear un usuario:**
 
       ```javascript
       async function createUser(event) {
@@ -136,11 +134,7 @@ Al finalizar esta práctica, serás capaz de:
    - En las funciones `fetchUsers` y `createUser`, ya se manejan errores con `try...catch`.
 
    - Simula un error modificando la URL en el método `fetch` (por ejemplo, usa una URL incorrecta como `'https://reqres.in/api/invalid'`) y observa cómo se muestra el mensaje de error.
-   
-   
-<br/><br/>
 
-### Resultado esperado
-
+### Resultado esperado:
 
 ![imagen resultado](../images/image2_5_1.png)
