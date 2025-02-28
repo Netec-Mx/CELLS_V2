@@ -1,4 +1,4 @@
-# Práctica 1.1 Conocimientos Generales I
+# Práctica 1.1. Conocimientos generales I
 
 ## Objetivo:
 Al finalizar esta práctica, serás capaz de:
@@ -7,16 +7,11 @@ Al finalizar esta práctica, serás capaz de:
 ## Duración aproximada:
 - 20 minutos.
 
-## Instrucciones 
+## Instrucciones:
 
-- Relaciona los siguiente términos. Al finalizar la actividad, las respuestas correctas serán discutidas y aclaradas por tu instructor para asegurar tu comprensión.  
-
-
-<br/>
+1. Relaciona los siguiente términos. Al finalizar la actividad, las respuestas correctas serán discutidas y aclaradas por tu instructor para asegurar tu comprensión sobre éstos.  
 
 ---
-
-<br/>
 
 **Término** | **Definición**  
 --- | ---  
@@ -26,7 +21,7 @@ Al finalizar esta práctica, serás capaz de:
 **4. Abstracción** | D. Ocultar métodos internos y datos para evitar el acceso directo desde fuera de la clase.  
 **5. Constructor** | E. Clases que no pueden ser instanciadas  
 **6. Encapsulamiento** | F. La medida en que una entidad (componente o clase) apoya un propósito singular dentro de un sistema.  
-**7. Composición, Uso, Agregación y Herencia** | G. La capacidad de determinar el método real que se llama en función del subtipo del objeto.  
+**7. Composición, uso, agregación y herencia** | G. La capacidad de determinar el método real que se llama en función del subtipo del objeto.  
 **8. Clase** | H. Una instancia de una clase.  
 **9. Acoplamiento** | I. Método especial que inicia los objetos de la clase.  
 **10. Cohesión** | J. Relaciones entre dos clases.  
