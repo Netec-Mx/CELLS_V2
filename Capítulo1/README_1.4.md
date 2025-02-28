@@ -1,26 +1,16 @@
-# Práctica 1.4 Conocimientos Generarles IV
+# Práctica 1.4. Conocimientos generarles IV
 
 ## Objetivo:
 Al finalizar la práctica, serás capaz de:
-
 - Relacionar términos clave y conceptos fundamentales en tecnologías y desarrollo de software.
-
 
 ## Duración aproximada:
 - 20 minutos.
 
-
-## Instrucciones 
-
-- Relaciona los siguiente términos. Al finalizar la actividad, las respuestas correctas serán discutidas y aclaradas por tu instructor para asegurar tu comprensión.  
-
-
-<br/>
+## Instrucciones:
+1. Relaciona los siguiente términos. Al finalizar la actividad, las respuestas correctas serán discutidas y aclaradas por tu instructor para asegurar tu comprensión.  
 
 ---
-
-<br/>
-
 
 | **Término** | **Definición**                  |
 |-------------------------|-----------------------------------------|
