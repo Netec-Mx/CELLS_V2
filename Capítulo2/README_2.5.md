@@ -1,4 +1,4 @@
-# Prática 2.5 DOM
+# Prática 2.5. DOM
 
 ## Objetivo:
 Al finalizar la práctica, serás capaz de:
@@ -11,11 +11,11 @@ Al finalizar la práctica, serás capaz de:
 ## Duración aproximada:
 - 40 minutos.
 
-## Instrucciones 
+## Instrucciones:
 
-### **Tarea 1: Crear el HTML base**
+### **Tarea 1: Crear el HTML base.**
 
-Crea un archivo `practica2_5.html` con la siguiente estructura:
+1. Crea un archivo `practica2_5.html` con la siguiente estructura:
 
 ```html
 <!DOCTYPE html>
@@ -48,11 +48,10 @@ Crea un archivo `practica2_5.html` con la siguiente estructura:
 </html>
 ```
 
-<br/>
+### **Tarea 2: Seleccionar elementos y manipular contenido.**
 
-### **Tarea 2: Seleccionar elementos y manipular contenido**
-
-Crea un archivo `practica2_5.js` y selecciona los elementos en el DOM utilizando `querySelector`. Cambia el contenido del párrafo con un evento.
+1. Crea un archivo `practica2_5.js` y selecciona los elementos en el DOM utilizando `querySelector`.
+2. Cambia el contenido del párrafo con un evento.
 
 ```javascript
 document.querySelector("#updateContent").addEventListener("click", () => {
@@ -61,11 +60,9 @@ document.querySelector("#updateContent").addEventListener("click", () => {
 });
 ```
 
-<br/>
+### **Tarea 3: Modificar estilos utilizando `classList`.**
 
-### **Tarea 3: Modificar estilos utilizando `classList`**
-
-Añade o elimina una clase utilizando `classList.toggle`.
+1. Añade o elimina una clase utilizando `classList.toggle`.
 
 ```javascript
 document.querySelector("#toggleClass").addEventListener("click", () => {
@@ -74,11 +71,9 @@ document.querySelector("#toggleClass").addEventListener("click", () => {
 });
 ```
 
-<br/>
+### **Tarea 4: Utilizar `data-*` y `dataset`.**
 
-### **Tarea 4: Utilizar `data-*` y `dataset`**
-
-Muestra el valor del atributo `data-info` del párrafo y actualízalo dinámicamente.
+1. Muestra el valor del atributo `data-info` del párrafo y actualízalo dinámicamente.
 
 ```javascript
 document.querySelector("#updateContent").addEventListener("click", () => {
@@ -88,11 +83,9 @@ document.querySelector("#updateContent").addEventListener("click", () => {
 });
 ```
 
-<br/>
+### **Tarea 5: Almacenamiento con LocalStorage y SessionStorage.**
 
-### **Tarea 5: Almacenamiento con LocalStorage y SessionStorage**
-
-Guarda y recupera el contenido del párrafo utilizando LocalStorage.
+1. Guarda y recupera el contenido del párrafo utilizando LocalStorage.
 
 ```javascript
 document.querySelector("#saveToLocalStorage").addEventListener("click", () => {
@@ -117,9 +110,7 @@ document.querySelector("#clearLocalStorage").addEventListener("click", () => {
 });
 ```
 
-<br/>
-
-#### **Tareas Adicionales**
+#### **Tareas adicionales:**
 
 1. **Añadir estilos condicionales:** Cambia el color del texto del párrafo basándote en el valor almacenado en `data-info`.
 
@@ -165,16 +156,12 @@ window.addEventListener("load", () => {
 
 ```
 
-<br/><br/>
-
-### **Resultado Esperado**
+### **Resultado esperado:**
 
 1. El usuario puede interactuar con los botones para manipular el contenido y estilo de los elementos del DOM.
 
 2. Los cambios pueden ser guardados en LocalStorage y restaurados al presionar el botón correspondiente.
 
 3. Los datos temporales persisten durante la sesión del navegador utilizando `sessionStorage`.
-
-<br/>
 
 ![imagen resultado](../images/image2_6_1.png)
