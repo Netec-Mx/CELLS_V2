@@ -1,4 +1,4 @@
-# Prática 2.6 DOM II
+# Prática 2.6. DOM II
 
 ## Objetivo:
 Al finalizar la práctica, serás capaz de manipular elementos del DOM seleccionándolos y modificando su contenido usando iframes.
@@ -6,10 +6,9 @@ Al finalizar la práctica, serás capaz de manipular elementos del DOM seleccion
 ## Duración aproximada:
 - 15 minutos.
 
-## Instrucciones 
+## Instrucciones:
 
-### Tarea I. Crear y manipular un iframe dinámicamente
-
+### Tarea 1. Crear y manipular un iframe dinámicamente.
 
 ```html
 <!DOCTYPE html>
@@ -72,26 +71,16 @@ Al finalizar la práctica, serás capaz de manipular elementos del DOM seleccion
    - Se obtiene el documento interno del iframe usando `iframe.contentDocument` o `iframe.contentWindow.document` (dependiendo del navegador).
    - Se modifica el contenido del iframe utilizando `innerHTML`.
 
-
-<br/>
-<br/>
-
-
-## Resultado Esperado
+## Resultado esperado:
 
 - Captura de pantalla con el diseño de la página con IFrame.
 
 ![Resultado](../images/image1.png)
 
-<br/>
-
 - Realiza una captura de pantalla que muestre el mensaje de alerta generado al intentar cambiar el contenido del iframe antes de haberlo creado. Este mensaje aparece cuando el botón "Cambiar Contenido" se pulsa sin que el iframe exista en el documento. 
 
 ![Resultado](../images/image2_6_2.png)
 
-<br/>
-
 - Captura de pantalla que muestra el error generado en la consola del navegador al intentar acceder al contenido del iframe cuando este carga un recurso externo que no cumple con las políticas de mismo origen (CORS). Este error ocurre debido a las restricciones de seguridad impuestas por el navegador para proteger los datos.
-
 
 ![Resultado](../images/image2_6_3.png)
