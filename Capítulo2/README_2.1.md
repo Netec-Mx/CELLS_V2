@@ -1,43 +1,40 @@
+# Práctica 2.1. Fundamentos de JavaScript
 
-# Práctica 2.1 Fundamentos de JavaScript
-
-## Objetivo 
+## Objetivo:
 Al finalizar la práctica, serás capaz de:
-- Declarar variables utilizando `var`, `let` y `const`
-- Identificar y manejar tipos de datos primitivos y estructuras complejas, 
-- Emplear operadores y estructuras de control como `if`, `switch`, `for` y `while` para resolver problemas básicos.
+- Declarar variables utilizando `var`, `let` y `const`.
+- Identificar y manejar tipos de datos primitivos y estructuras complejas.
+- Emplear operadores y estructuras de control, como: `if`, `switch`, `for` y `while` para resolver problemas básicos.
 
 ## Duración aproximada:
 - 35 minutos.
 
-## Instrucciones
+## Instrucciones:
 
-### Tarea 1. Declaración de Variables
+### Tarea 1. Declaración de variables.
 
-#### **Paso 1:**  
-- Abre tu editor de código y crea un archivo llamado `fundamentos.js`.  
-- Declara una variable con `var`, una con `let` y una con `const`.  
-- Asigna un valor diferente a cada variable e imprime su contenido en la consola usando `console.log`.
-- Utiliza Template Literal
+**Paso 1:**  
+1. Abre tu editor de código y crea un archivo llamado `fundamentos.js`.
+2. Declara tres variables: una con `var`, otra con `let` y la última con `const`.
+3. Asigna un valor diferente a cada variable e imprime su contenido en la consola usando `console.log`.
+4. Utiliza `Template Literal`.
 
-#### **Paso 2:**  
-- Intenta reasignar valores a las variables declaradas con `var`, `let` y `const`. 
-- Observa qué sucede y anota tus conclusiones como comentarios en el código.
+**Paso 2:**  
+1. Intenta reasignar valores a las variables declaradas con `var`, `let` y `const`.
+2. Observa qué sucede y anota tus conclusiones como comentarios en el código.
 
-#### **Paso 3:**
-- Prueba tu código ejecutando el archivo `fundamentos.js` con Node.js desde la terminal
+**Paso 3:**
+1. Prueba tu código ejecutando el archivo `fundamentos.js` con Node.js desde la terminal
 
 `cmd
 node fundamentos.js
 `
 
-<br/><br/>
+### Tarea 2. Tipos de datos primitivos y estructuras complejas.
 
-### Tarea 2. Tipos de Datos Primitivos y Estructuras Complejas
+**Paso 1:**  
 
-#### **Paso 1:**  
-
-- Declara variables de diferentes tipos de datos primitivos:  
+1. Declara variables de diferentes tipos de datos primitivos:  
 
   ```javascript
   let nombre = "Juan"; // String
@@ -47,17 +44,18 @@ node fundamentos.js
   let nulo = null; // Null
   ```
 
-- Usa `console.log` y `typeof` para imprimir el valor y el tipo de cada variable.
+2. Usa `console.log` y `typeof` para imprimir el valor y el tipo de cada variable.
 
-#### **Paso 2:**  
+**Paso 2:**  
 
-- Declara y trabaja con estructuras complejas:  
+1. Declara y trabaja con estructuras complejas:
   - Crea un **arreglo** con al menos 5 elementos. 
   - Accede a un elemento específico y modifica otro.
   - Declara un **objeto** con al menos 3 propiedades. 
   - Accede a una propiedad específica y agrega una nueva propiedad.
 
-Ejemplo:  
+Ejemplo: 
+
 ```javascript
 
 let arreglo = [1, 2, 3, 4, 5];
@@ -73,12 +71,11 @@ persona["edad"] = 21;
 
 ```
 
-<br/> <br/>
-
-### Tarea 3. Operadores y Estructuras de Control
+### Tarea 3. Operadores y estructuras de control.
 
 #### **Paso 1:**
-- Instala la librería `promp-sync`
+
+1. Instala la librería `promp-sync`.
 
 ```cmd
 npm install prompt-sync
@@ -86,11 +83,11 @@ npm install prompt-sync
 
 **Nota:**
 1. Útil para quienes están comenzando a aprender Node.js y necesitan simular interactividad.
-2. No es ideal para aplicaciones complejas o que necesiten manejar entradas de manera no bloqueante (asincrónica)
+2. No es ideal para aplicaciones complejas o que necesiten manejar entradas de manera no bloqueante (asincrónica).
 
-#### **Paso 2:**  
+**Paso 2:**  
 
-- Escribe un programa que solicite al usuario dos números y muestre el mayor utilizando un **operador condicional** y una estructura `if`.
+1. Escribe un programa que solicite al usuario dos números y muestre el mayor utilizando un **operador condicional** y una estructura `if`.
 
 ```javascript
 
@@ -114,8 +111,8 @@ if (numero1 > numero2) {
 }
 ```
 
-#### **Paso 3:**  
-- Crea un programa con un menú usando un **switch** para las siguientes opciones:  
+**Paso 3:**  
+1. Crea un programa con un menú usando un **switch** para las siguientes opciones:  
   - Sumar dos números.  
   - Restar dos números.  
   - Salir.  
@@ -160,11 +157,10 @@ switch (opcion) {
 
 ```
 
-#### **Paso 4:**  
-- Escribe un programa que use un **ciclo for** para imprimir los números del 1 al 10.  
-- Escribe un programa que usa un **ciclo for** para imprimir los números del 1 al 10 de 2 en 2.
-- Escribe otro programa que use un **ciclo while** para sumar todos los números del 1 al 10 e imprima el resultado.
-
+**Paso 4:**  
+1. Escribe un programa que use un **ciclo for** para imprimir los números del 1 al 10.
+2. Escribe un programa que usa un **ciclo for** para imprimir los números del 1 al 10 de 2 en 2.
+3. Escribe otro programa que use un **ciclo while** para sumar todos los números del 1 al 10 e imprima el resultado.
 
 ```javascript
 
@@ -194,12 +190,9 @@ console.log(`\nLa suma de los números del 1 al 10 es: ${suma}`);
 
 ```
 
-<br/><br/>
+**Tarea 4. Integración.**
 
-
-### **Tarea 4. Integración**
-
-Combina los conceptos aprendidos:  
+1. Combina los conceptos aprendidos:  
 
 - Crea un programa que solicite al usuario un nombre, edad y ciudad.  
 
@@ -207,31 +200,20 @@ Combina los conceptos aprendidos:
 
 - Usa un bucle para imprimir todos los datos de las personas en la consola.  
 
-<br/> <br/>
-
-## Resultado esperado
+## Resultado esperado:
  
 - Captura de pantalla con la salida de la Tarea 1.
  
 ![Resultado](../images/image2_1_1.png)
 
-<br/><br/>
-
 - Captura de pantalla con la salida de la Tarea 2.
  
 ![Resultado](../images/image2_1_2.png)
-
-<br/><br/>
 
 - Captura de pantalla con la salida de la Tarea 3.
  
 ![Resultado](../images/image2_1_3.png)
 
-<br/><br/>
-
-
 - Captura de pantalla con la salida de la Tarea 4.
  
 ![Resultado](../images/image2_1_4.png)
-
-<br/><br/>
