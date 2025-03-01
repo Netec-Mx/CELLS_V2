@@ -1,4 +1,4 @@
-# Práctica 3.1 Lit
+# Práctica 3.1. Lit
 
 ## Objetivo:
 Al finalizar la práctica, serás capaz de:
@@ -7,7 +7,6 @@ Al finalizar la práctica, serás capaz de:
 - Usar diferentes formas de gestionar condicionales.
 - Utilizar diferentes formas de iteración en Lit para renderizar elementos dinámicamente en el DOM.
 - Implementar la directiva repeat en un componente Lit para optimizar el renderizado de listas de elementos dinámicos.
-
 
 ## Duración aproximada:
 - 80 minutos.
@@ -22,31 +21,28 @@ Al finalizar la práctica, serás capaz de:
 |  VSC | https://code.visualstudio.com/download  | v1.96.2  |
 |  es-dev-server| npm install --save-dev es-dev-server   | 2.1.0 |
 
+## Instrucciones:
 
-<br/>
+### Tarea 1: Creación de tu primer Lit Component.
 
-## Instrucciones 
+**Paso 1. Configurar el entorno de trabajo.**
+1. Instala Node.js si no está previamente instalado.
+2. Crea una carpeta para el proyecto y acceder a ella mediante la terminal CMD.
+3. Ejecuta `npm init -y` para inicializar un proyecto con un archivo `package.json`.
 
-### Tarea 1: Creación de tu primer Lit Component
+**Paso 2. Instalar dependencias necesarias.**
+1. Instala Lit ejecutando `npm install lit`.
 
-#### Paso 1. **Configurar el entorno de trabajo:**
-   - Instalar Node.js si no está previamente instalado.
-   - Crear una carpeta para el proyecto y acceder a ella mediante la terminal CMD
-   - Ejecutar `npm init -y` para inicializar un proyecto con un archivo `package.json`.
+**Paso 3. Crear el archivo de componente.**
+1. Crea una carpeta llamada `src` en el proyecto.
+2. Crea un archivo `my-component.js` dentro de la carpeta `src`.
 
-#### Paso 2. **Instalar dependencias necesarias:**
-   - Instalar Lit ejecutando `npm install lit`.
-
-#### Paso 3. **Crear el archivo de componente:**
-   - Crear una carpeta llamada `src` en el proyecto.
-   - Crear un archivo `my-component.js` dentro de la carpeta `src`.
-
-#### Paso 4. **Definir el componente Lit:**
-   - Importar Lit en el archivo `my-component.js` escribiendo:
+**Paso 4. Definir el componente Lit.**
+1. Importa Lit en el archivo `my-component.js` escribiendo:
      ```javascript
      import { LitElement, html, css } from 'lit';
      ```
-   - Extender la clase `LitElement` para definir tu componente:
+2. Extiende la clase `LitElement` para definir tu componente:
      ```javascript
      class MyComponent extends LitElement {
        static styles = css`
@@ -64,17 +60,15 @@ Al finalizar la práctica, serás capaz de:
      }
      ```
 
-- Definir un nuevo elemento personalizado para el navegador basado en la clase `MyComponent`
+3. Define un nuevo elemento personalizado para el navegador basado en la clase `MyComponent`:
 
      ```javascript
      customElements.define('my-component', MyComponent);
      ```
-    
-    
 
-#### Paso 5. **Crear el archivo HTML principal:**
-   - Crear un archivo llamado `index.html` en la raíz del proyecto.
-   - Agregar la estructura básica del HTML e incluir el componente:
+**Paso 5. Crear el archivo HTML principal.**
+1. Crea un archivo llamado `index.html` en la raíz del proyecto.
+2. Agrega la estructura básica del HTML e incluye el componente:
      ```html
      <!DOCTYPE html>
      <html lang="en">
@@ -90,25 +84,22 @@ Al finalizar la práctica, serás capaz de:
      </html>
      ```
 
-#### Paso 6. **Iniciar un servidor de desarrollo:**
-   - Instalar el servidor de desarrollo `lite-server` ejecutando: `npm install es-dev-server --save-dev`.
-   - Agregar un script en el `package.json` para iniciar el servidor:
+**Paso 6. Iniciar un servidor de desarrollo.**
+1. Instala el servidor de desarrollo `lite-server` ejecutando: `npm install es-dev-server --save-dev`.
+2. Agrega un script en el `package.json` para iniciar el servidor:
      ```json
      "scripts": {
         "start": "es-dev-server --app-index index.html --node-resolve --open"
      }
      ```
-   - Ejecutar el comando `npm start` para iniciar el servidor y abrir el proyecto en el navegador.
+3. Ejecuta el comando `npm start` para iniciar el servidor y abrir el proyecto en el navegador.
 
-#### Paso 7. **Verificar la salida:**
+**Paso 7. Verificar la salida.**
    - Confirmar que el componente `my-component` se renderiza correctamente con el texto y los estilos aplicados.
 
-#### Paso 8. **Personalizar el componente:**
-   - Modificar el contenido del método `render` o los estilos para explorar cómo se reflejan los cambios en la página.
-   - Agrega un título a la página: `Práctica 3.1 Lit`
-
-
-<br/><br/>
+**Paso 8. Personalizar el componente.**
+1. Modifica el contenido del método `render` o los estilos para explorar cómo se reflejan los cambios en la página.
+2. Agrega un título a la página: `Práctica 3.1 Lit`
 
 ### **Resultado esperado:** 
 
@@ -120,14 +111,13 @@ Al finalizar la práctica, serás capaz de:
 
   ![Resultado Esperado](../images/imagen3_2.png)
 
+---
 
-<br/><br/>
+### Tarea 2. Ciclo de Vida.
 
-### Tarea 2. Ciclo de Vida
+**Paso 1. Definir un componente Lit.**
 
-#### Paso 1. **Definir un componente Lit.**
-
-- Crea un archivo `bb-ciclo.js` en la carpeta src/ y define el siguiente componente
+1. Crea un archivo `bb-ciclo.js` en la carpeta src/ y define el siguiente componente:
   
 ```javascript
 import { LitElement, html, css } from 'lit';
@@ -211,8 +201,8 @@ console.log('customElements.define: definiendo la nueva etiqueta HTML');
 customElements.define('bb-ciclo', BBCiclo);
 ```
  
-#### Paso 2. **Usar el componente Lit.**
-- Modifica el archivo index.html para agregar el nuevo componente bb-ciclo.
+**Paso 2. Usar el componente Lit.**
+1. Modifica el archivo index.html para agregar el nuevo componente bb-ciclo.
 
 ```html
 <!DOCTYPE html>
@@ -232,9 +222,7 @@ customElements.define('bb-ciclo', BBCiclo);
 </html>
 ```
 
-<br/><br/>
-
-### **Resultado Esperado:** 
+### **Resultado esperado:** 
 
 - La imagen ilustra perfectamente el ciclo de vida completo de un componente Lit y cómo interactuar con cada etapa.
 
@@ -249,16 +237,14 @@ customElements.define('bb-ciclo', BBCiclo);
 6. firstUpdated: Se ejecuta después del primer renderizado para realizar tareas dependientes del DOM.
 7. updated: El compoenete se actualizó.
 
+---
 
-<br/><br/>
+### Tarea 3. Ciclo de vida II (actualización y eliminación).
 
+**Paso 1. Cambios para ver disconnectedCallback.**
 
-### Tarea 3. Ciclo de Vida II (Actualización & Eliminación)
-
-#### Paso 1. **Cambios para ver disconnectedCallback**
-
-- Usa un temporizador (setTimeout) para eliminar el componente del DOM después de unos segundos.
-- Modifica el archivo principal donde estás utilizando <bb-ciclo> y elimina el componente con JavaScript.
+1. Usa un temporizador (setTimeout) para eliminar el componente del DOM después de unos segundos.
+2. Modifica el archivo principal donde estás utilizando <bb-ciclo> y elimina el componente con JavaScript.
 
 ```JavaScript
 setTimeout(() => {
@@ -273,11 +259,10 @@ setTimeout(() => {
 
 - **Nota:**: Este código ejecutará disconnectedCallback y mostrará el mensaje correspondiente en la consola.
 
+**Paso 2. Cambios para ver attributeChandedCallback.**
 
-#### Paso 2. **Cambios para ver attributeChandedCallback**
-
-- Cambia un atributo del componente dinámicamente usando JavaScript.
-- Esto activará el método `attributeChangedCallback` para reflejar el cambio.
+1. Cambia un atributo del componente dinámicamente usando JavaScript.
+2. Esto activará el método `attributeChangedCallback` para reflejar el cambio.
 
 ```javascript
 setTimeout(() => {
@@ -292,9 +277,7 @@ setTimeout(() => {
 
 - **Nota:**: Este código activará `attributeChangedCallback`, y deberías ver el mensaje en la consola.
 
-<br/><br/>
-
-### **Resultado Esperado:** 
+### **Resultado esperado:** 
 
 - La imagen ilustra perfectamente el ciclo de vida, en una actualización y eliminación.
 
@@ -305,14 +288,14 @@ setTimeout(() => {
 1. Después de 3 segundos, verás un mensaje indicando que se cambió el atributo name y que se activó attributeChangedCallback.
 2. Después de 6 segundos, verás un mensaje indicando que el componente fue eliminado del DOM y que se activó disconnectedCallback.
 
-<br/><br/>
+---
 
 ### Tarea 4. Uso de Plantillas en Lit con  con `html```
 
 En esta tarea, aprenderás cómo crear y usar plantillas dinámicas con `html`` en Lit. Esto incluye la inserción de valores dinámicos, cómo funcionan las expresiones básicas y cómo utilizarlas en tus componentes.
 
-#### Paso 1. **Crea tu Componente Lit.**
-- Crea un archivo llamando bb-basica.js dentro de la carpeta `src/` y agrega el siguiente código:
+**Paso 1. Crea tu Componente Lit.**
+1. Crea un archivo llamando bb-basica.js dentro de la carpeta `src/` y agrega el siguiente código:
 
 ```JavaScript
 
@@ -342,9 +325,9 @@ customElements.define('bb-basica', BBBasica);
 */
 ```
 
-#### Paso 2. **Incluye el Componente Lit en el HTML**
+**Paso 2. Incluye el componente Lit en el HTML.**
 
-- Edita el archivo `index.html` y agrega el componente en el cuerpo del documento:
+1. Edita el archivo `index.html` y agrega el componente en el cuerpo del documento:
 
 ```html
 <!DOCTYPE html>
@@ -367,9 +350,7 @@ customElements.define('bb-basica', BBBasica);
 
 ```
 
-<br/> <br/>
-
-#### Paso 3. **Crea tu Componente Lit.**
+**Paso 3. Crea tu componente Lit.**
 
 ```javascript
 import { html, LitElement } from 'lit';
@@ -401,7 +382,7 @@ customElements.define('bb-atributo', BBAtributo);
 
 ```
 
-#### Paso 4. **Incluye el Componente Lit en el HTML**
+**Paso 4. Incluye el componente Lit en el HTML.**
 
 ```html
 <!DOCTYPE html>
@@ -425,9 +406,7 @@ customElements.define('bb-atributo', BBAtributo);
 </html>
 ```
 
-<br/> <br/>
-
-#### Paso 5. **Crea tu Componente Lit.**
+**Paso 5. Crea tu componente Lit.**
 
 ```javascript
 import { html, LitElement } from 'lit';
@@ -464,7 +443,7 @@ customElements.define('bb-propiedad', BBPropiedad);
 */
 ```
 
-#### Paso 6. **Incluye el Componente Lit en el HTML**
+**Paso 6. Incluye el componente Lit en el HTML.**
 
 ```html
 <!DOCTYPE html>
@@ -490,9 +469,7 @@ customElements.define('bb-propiedad', BBPropiedad);
 </html>
 ```
 
-<br/> <br/>
-
-#### Paso 7. **Crea tu Componente Lit.**
+**Paso 7. Crea tu componente Lit.**
 
 ```javascript
 import { html, LitElement } from 'lit';
@@ -524,8 +501,7 @@ customElements.define('bb-condicional', BBCondicional);
 */
 ```
 
-#### Paso 8. **Incluye el Componente Lit en el HTML**
-
+**Paso 8. Incluye el componente Lit en el HTML.**
 
 ```html
 <!DOCTYPE html>
@@ -568,10 +544,8 @@ customElements.define('bb-condicional', BBCondicional);
 </html>
 ```
 
-<br/> <br/>
+**Paso 9. Crea tu Componente Lit.**
 
-
-#### Paso 9. **Crea tu Componente Lit.**
 ```javascript
 import { html, LitElement } from 'lit';
 
@@ -602,7 +576,7 @@ customElements.define('bb-condicional', BBCondicional);
 */
 ```
 
-#### Paso 10. **Incluye el Componente Lit en el HTML**
+**Paso 10. Incluye el componente Lit en el HTML.**
 
 ```html
 <H1>Práctica 3.1 Lit</H1>
@@ -643,9 +617,7 @@ customElements.define('bb-condicional', BBCondicional);
 </html>
 ```
 
-<br/> <br/>
-
-#### Paso 11. **Crea tu Componente Lit.**
+**Paso 11. Crea tu componente Lit.**
 
 ```javascript
 import { html, LitElement } from 'lit';
@@ -689,7 +661,7 @@ customElements.define('bb-listas', BBListas);
 
 ```
 
-#### Paso 12. **Incluye el Componente Lit en el HTML**
+**Paso 12. Incluye el componente Lit en el HTML.**
 
 ```html
 <H1>Práctica 3.1 Lit</H1>
@@ -735,9 +707,7 @@ customElements.define('bb-listas', BBListas);
 
 ```
 
-<br/> <br/>
-
-#### Paso 13. **Crea tu Componente Lit.**
+**Paso 13. Crea tu componente Lit.**
 
 ```javascript
 import { html, LitElement } from 'lit';
@@ -773,8 +743,7 @@ customElements.define('bb-nodo', BBNodo);
 
 ```
 
-
-#### Paso 14. **Incluye el Componente Lit en el HTML**
+**Paso 14. Incluye el componente Lit en el HTML.**
 
 ```html
 
@@ -827,10 +796,7 @@ customElements.define('bb-nodo', BBNodo);
 
 ```
 
-<br/> <br/>
-
-
-#### Paso 15. **Crea tu Componente Lit.**
+**Paso 15. Crea tu componente Lit.**
 
 ```javascript
 import { html, LitElement } from 'lit';
@@ -864,7 +830,7 @@ customElements.define('bb-complejo', BBComplejo);
 
 ```
 
-#### Paso 16. **Incluye el Componente Lit en el HTML**
+**Paso 16. Incluye el componente Lit en el HTML.**
 
 ```html
 <H1>Práctica 3.1 Lit</H1>
@@ -920,19 +886,16 @@ customElements.define('bb-complejo', BBComplejo);
 </html>
 ```
 
-<br/><br/>
-
-
-### **Resultado Esperado:** 
+### **Resultado esperado:** 
 
   ![Resultado Esperado](../images/imagen3_5.png)
 
+---
 
-<br/><br/>
- 
-### Tarea 6. Propiedades y Atributos Reactivos
+### Tarea 6. Propiedades y atributos reactivos.
 
-#### Paso 1. **Modificar la página principal HTML**
+**Paso 1. Modificar la página principal HTML.**
+
 1. Crea una nueva página HTML.
 
 2. Actualiza la página principal para incluir un enlace de navegación hacia la nueva página.
@@ -944,8 +907,7 @@ Ejemplo de código a incluir en la página principal:
 <a href="condicionales.html">Ir a Condicionales</a>
 ```
 
-
-#### Paso 2. **Crear la nueva página HTML**
+**Paso 2. Crear la nueva página HTML.**
 1. Crea un archivo llamado `condicionales.html`.
 2. Asegúrate de vincular correctamente el script que contiene el nuevo componente LitElement.
 3. Incluye el componente personalizado en la nueva página.
@@ -971,7 +933,7 @@ Ejemplo de contenido para `condicionales.html`:
 </html>
 ```
 
-#### Paso 3. **Crear el nuevo componente Lit**
+**Paso 3. Crear el nuevo componente Lit.**
 1. Crea un archivo llamado `bb-condicionales.js` en la carpeta `src`.
 2. Define el componente `BBCondicionales` utilizando la clase `LitElement`.
 3. Declara las propiedades reactivas `userName` y `userStatus`.
@@ -1049,30 +1011,28 @@ class BBCondicionales extends LitElement {
 customElements.define('bb-condicionales', BBCondicionales);
 ```
 
-<br><br/>
-
-### Resultado Esperado
+### Resultado esperado:
 
 - El ejemplo de condicionales en **Lit** demuestra cómo manejar la lógica de renderizado dinámico utilizando diferentes estructuras condicionales (`operador ternario`, `if-else` y `switch`) dentro de un componente web personalizado. Este enfoque permite renderizar contenido dinámico en función del estado o propiedades del componente, manteniendo el código modular, reutilizable y fácil de leer.
 
 ![Resultado Esperado](../images/imagen3_6.png)
 
+---
 
-<br/><br/>
+### Tarea 7. Iteraciones en Lit.
 
-### Tarea 7. Iteraciones en Lit
+**Paso 1. Crea el componente base.**
 
-#### Paso 1. **Crea el componente base:**
-   - Dentro de la carpeta `src`, crea un archivo llamado `bb-iteraciones-lit.js`.
+1. Dentro de la carpeta `src`, crea un archivo llamado `bb-iteraciones-lit.js`.
 
-#### Paso 2. **Define las iteraciones básicas:**
+**Paso 2. Define las iteraciones básicas.**
    - Implementa el siguiente código que muestra tres tipos de iteraciones:
      1. **Iteración básica con `map()`.**
      2. **Iteración usando un contador.**
      3. **Renderizado condicional basado en iteraciones.**
 
-#### Paso 3. **Código inicial:**  
-   Copia el siguiente código en `bb-iteraciones-lit.js`:
+**Paso 3. Código inicial:**  
+1. Copia el siguiente código en `bb-iteraciones-lit.js`:
 
    ```javascript
    import { LitElement, html, css } from 'lit';
@@ -1137,11 +1097,9 @@ customElements.define('bb-condicionales', BBCondicionales);
    customElements.define('bb-iteraciones-lit', BBIteracionesLit);
    ```
 
-#### Paso 4. **Incluye el componente en tu aplicación:**
-   - Asegúrate de importar y utilizar el componente en el archivo principal de tu proyecto.
+**Paso 4. Incluye el componente en tu aplicación.**
 
-
-<br/><br/>
+1. Asegúrate de importar y utilizar el componente en el archivo principal de tu proyecto.
 
 ### **Resultados esperados:**
 
@@ -1151,13 +1109,11 @@ customElements.define('bb-condicionales', BBCondicionales);
 
   ![Resultado Esperado](../images/imagen3_7.png)
 
+---
 
-<br/><br/>
+### Tarea 8. Directiva repeat.
 
-
-### Tarea 8. Directiva repeat
-
-#### Paso 1. **Copia y pega el código JavaScript para un nuevo componente Lit**
+**Paso 1. Copia y pega el código JavaScript para un nuevo componente Lit.**
 
 ```javascript
 import { html, css, LitElement } from 'lit';
@@ -1240,7 +1196,7 @@ repeat toma tres argumentos:
 */
 ```
 
-#### Paso 2. **Crea nueva página y vinculala a la página inicial**
+**Paso 2. Crea nueva página y vinculada a la página inicial.**
 
 1. Crea una nueva página HTML.
 2. Actualiza la página principal para incluir un enlace de navegación hacia la nueva página.
@@ -1252,15 +1208,13 @@ Ejemplo de código a incluir en la página principal:
 <a href="repeat.html">Ir a Condicionales</a>
 ```
 
-#### Paso 3. **Ejecuta el componenten en tu navegador.**
-- Observa como se renderizan los componentes
-- Pulsa el botón para "Agregar Fruta". Nota cómo se actualiza la lista sin renderizar completamente.
-- Cambia los nombres predeterminados de las frutas o añade otros atributos a los elementos de la lista.
+**Paso 3. Ejecuta el componenten en tu navegador.**
 
+1. Observa cómo se renderizan los componentes.
+2. Pulsa el botón para "Agregar Fruta". Nota cómo se actualiza la lista sin renderizar completamente.
+3. Cambia los nombres predeterminados de las frutas o añade otros atributos a los elementos de la lista.
 
-<br><br/>
-
-### Resultado Esperado
+### Resultado esperado:
 
 -  La directiva repeat de Lit se utiliza para optimizar el renderizado de listas en componentes. En lugar de renderizar nuevamente todos los elementos de una lista cada vez que se actualiza, repeat solo actualiza los elementos que han cambiado. Esto mejora el rendimiento, especialmente en listas grandes.
 
