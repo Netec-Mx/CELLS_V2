@@ -1,29 +1,30 @@
-# Práctica 3.2.1 Estilos en Lit
+# Práctica 3.2.1. Estilos en Lit
 
 ## Objetivo:
 Al finalizar la práctica, serás capaz de:
 - Definir estilos CSS dentro de un componente Lit.
 - Aplicar estilos CSS a componentes Lit utilizando clases dinámicas para modificar la apariencia de los elementos en tiempo de ejecución.
-- Implementar estilos CSS en un componente Lit y utilizar clases dinámicas para modificar la apariencia de los elementos en respuesta ae ventos o estados internos.
-- Implementar un componente Lit con soporte para temas visuales, y personalización mediante propiedades y variables CSS.
+- Implementar estilos CSS en un componente Lit y utilizar clases dinámicas para modificar la apariencia de los elementos en respuesta a eventos o estados internos.
+- Implementar un componente Lit con soporte para temas visuales y personalización mediante propiedades y variables CSS.
 - Implementar un diseño con CSS Grid utilizando propiedades como `grid-template-columns`, `grid-template-rows`, `grid-column`
  
 ## Duración aproximada:
 - 125 minutos.
 
+## Instrucciones: 
 
-## Instrucciones 
+### Tarea 1. Estilos en Lit.
 
-### Tarea 1. Estilos en Lit
-
-#### Paso 1. **Crear la carpeta principal del proyecto:**
-   Ejecuta el siguiente comando para crear una carpeta llamada `practica3_2_1` que contendrá tu proyecto.  
+**Paso 1. Crear la carpeta principal del proyecto.**
+ 1. Ejecuta el siguiente comando para crear una carpeta llamada `practica3_2_1` que contendrá tu proyecto.
+  
    ```cmd
    mkdir practica3_2_1
    ```
 
-#### Paso 2. **Inicializar el proyecto con Node.js:**
-   Navega a la carpeta recién creada y prepara el entorno de trabajo inicializando un proyecto con Node.js.  
+**Paso 2. Inicializar el proyecto con Node.js.**
+ 1. Navega a la carpeta recién creada y prepara el entorno de trabajo inicializando un proyecto con Node.js.
+
    ```cmd
    cd practica3_2_1
    npm init -y
@@ -31,21 +32,21 @@ Al finalizar la práctica, serás capaz de:
    npm install --save-dev es-dev-server
    ```
 
-#### Paso 3. **Crear la estructura de carpetas y archivos:**
+**Paso 3. Crear la estructura de carpetas y archivos.**
 
-   - Crea una subcarpeta llamada `src` para organizar los archivos fuente.  
+1. Crea una subcarpeta llamada `src` para organizar los archivos fuente.  
     
      ```cmd
      mkdir src
      ```
 
-   - Dentro de la carpeta raíz, crea un archivo llamado `index.html`, que será el punto de entrada de tu proyecto.  
+2. Dentro de la carpeta raíz, crea un archivo llamado `index.html`, que será el punto de entrada de tu proyecto.  
     
      ```cmd
      touch index.html
      ```
    
-   - Dentro de la carpeta `src`, crea un archivo llamado `bb-estilos.js`, donde escribirás los estilos de tu componente Lit.  
+3. Dentro de la carpeta `src`, crea un archivo llamado `bb-estilos.js`, donde escribirás los estilos de tu componente Lit.  
     
      ```cmd
      cd src
@@ -55,9 +56,9 @@ Al finalizar la práctica, serás capaz de:
 - **Nota** Con estos pasos, tendrás listo el proyecto base para comenzar a trabajar con estilos en Lit.
 
 
-#### Paso 4. **Agregar contenido al archivo `bb-estilos.js`:**  
+**Paso 4. Agregar contenido al archivo `bb-estilos.js`.**  
 
-- Este archivo define un componente Lit con estilos aplicados.
+1. Este archivo define un componente Lit con estilos aplicados.
 
    ```javascript
    import { LitElement, html, css } from 'lit';
@@ -99,9 +100,9 @@ Al finalizar la práctica, serás capaz de:
    customElements.define('bb-estilos', BbEstilos);
    ```
 
-#### Paso 5. **Actualizar el archivo `index.html`:**  
+**Paso 5. Actualizar el archivo `index.html`.**  
 
-- Este archivo carga el componente y muestra su contenido.
+1. Este archivo carga el componente y muestra su contenido.
 
    ```html
    <!DOCTYPE html>
@@ -123,10 +124,9 @@ Al finalizar la práctica, serás capaz de:
    </html>
    ```
 
-#### Paso 6. **Iniciar un servidor local para visualizar el proyecto:**  
+**Paso 6. Iniciar un servidor local para visualizar el proyecto.**  
 
-  
-- Agrega la instrucción siguiente en el archivo `package.json`
+1. Agrega la instrucción siguiente en el archivo `package.json`
 
     ```json
     "scripts": {
@@ -135,25 +135,23 @@ Al finalizar la práctica, serás capaz de:
     
     ```
 
-- Inicia el servidor local para ejecutar el proyecto.
+2. Inicia el servidor local para ejecutar el proyecto.
 
    ```cmd
    npm start
    ```
 
-#### Paso 7. **Verificar el resultado:**  
-- Abre tu navegador web y observa cómo el componente `bb-estilos` se carga con los estilos definidos. Asegúrate de que los estilos se apliquen correctamente y que el diseño sea coherente.
+**Paso 7. Verificar el resultado.**  
 
-<br/><br/>
+1. Abre tu navegador web y observa cómo el componente `bb-estilos` se carga con los estilos definidos. Asegúrate de que los estilos se apliquen correctamente y que el diseño sea coherente.
 
-### Tarea 2. Encapsulación de estilos con Shadow DOM
+### Tarea 2. Encapsulación de estilos con Shadow DOM.
 
 En esta tarea, aprenderás a encapsular estilos utilizando el Shadow DOM con Lit, garantizando que los estilos definidos no afecten ni sean afectados por otros elementos externos.
  
+**Paso 1. Definir el componente en `bb-encapsulacion.js`:**
 
-#### Paso 1. **Definir el componente en `bb-encapsulacion.js`:**
-
-   Este archivo define un componente Lit con estilos encapsulados en el Shadow DOM.
+ 1. Este archivo define un componente Lit con estilos encapsulados en el Shadow DOM.
 
    ```javascript
    import { LitElement, html, css } from 'lit';
@@ -192,9 +190,9 @@ En esta tarea, aprenderás a encapsular estilos utilizando el Shadow DOM con Lit
    customElements.define('bb-encapsulacion', BbEncapsulacion);
    ```
 
-#### Paso 2. **Actualizar el archivo `index.html`:**
+**Paso 2. Actualizar el archivo `index.html`:**
 
-   Este archivo carga y muestra el componente con los estilos encapsulados.
+1. Este archivo carga y muestra el componente con los estilos encapsulados.
 
    ```html
    <!DOCTYPE html>
@@ -215,35 +213,34 @@ En esta tarea, aprenderás a encapsular estilos utilizando el Shadow DOM con Lit
    </html>
    ```
 
-#### Paso 3. **Probar el Componente**
+**Paso 3. Probar el Componente**
 
-- Utiliza un servidor local  para visualizar la aplicación.
+1. Utiliza un servidor local  para visualizar la aplicación.
 
     ```cmd
     npm start
     ```
    
-#### Paso 4. **Verifica el resultado:**   
-   - Abre tu navegador web y carga el archivo `index.html`.
-   - Observa cómo los estilos del componente `bb-encapsulacion` se aplican solo a su contenido y están protegidos por el Shadow DOM.
+**Paso 4. Verifica el resultado:**   
+
+1. Abre tu navegador web y carga el archivo `index.html`.
+2. Observa cómo los estilos del componente `bb-encapsulacion` se aplican solo a su contenido y están protegidos por el Shadow DOM.
 
 
-#### Paso 5. **Modificar los estilos CSS**
+**Paso 5. Modificar los estilos CSS**
 
-- Busca la definición de estilos en el componente (la propiedad static styles).
-- Cambia las propiedades del borde para establecer un grosor de 2 píxeles, un estilo sólido y un color rojo.
+1. Busca la definición de estilos en el componente (la propiedad static styles).
+2. Cambia las propiedades del borde para establecer un grosor de 2 píxeles, un estilo sólido y un color rojo.
  
-<br/><br/>
-
 ### Tarea 3. Uso de CSS en componentes Lit (CSS y clases dinámicas)
 
 En esta tarea, aprenderás a usar estilos en componentes Lit, incluyendo la manipulación de clases dinámicas para personalizar la apariencia de los elementos en tiempo de ejecución.
 
-#### Paso 1. **Definir el componente en `bb-clases-dinamicas.js`:**
+**Paso 1. Definir el componente en `bb-clases-dinamicas.js`.**
 
-Este archivo define un componente Lit que utiliza clases dinámicas para aplicar estilos según el estado interno del componente.
+1. Este archivo define un componente Lit que utiliza clases dinámicas para aplicar estilos según el estado interno del componente.
 
-   ```javascript
+```javascript
   import { LitElement, html, css } from 'lit';
 
 class BbClasesDinamicas extends LitElement {
@@ -315,9 +312,9 @@ class BbClasesDinamicas extends LitElement {
 }
 
 customElements.define('bb-clases-dinamicas', BbClasesDinamicas);
-   ```
+ ```
 
-#### Paso 2. **Actualizar el archivo `index.html`:**
+**Paso 2. Actualizar el archivo `index.html`.**
 
    Este archivo carga y muestra el componente con el uso de clases dinámicas.
 
@@ -328,28 +325,24 @@ customElements.define('bb-clases-dinamicas', BbClasesDinamicas);
      <script type="module" src="./src/bb-clases-dinamicas.js"></script>
    ```
 
-#### Paso 3. **Probar el Componente**
+**Paso 3. Probar el Componente.**
 
-1. **Inicia un servidor local para ejecutar el proyecto:**  
+1. Inicia un servidor local para ejecutar el proyecto:
   
-
    ```cmd
    npm start
    ```
 
-2. **Verifica el resultado:**  
+2. Verifica el resultado:
    - Abre el navegador y carga el archivo `index.html`.
    - Observa el botón en el componente `bb-clases-dinamicas`.
    - Haz clic en el botón para alternar su estado y ver cómo cambian los estilos dinámicamente.
 
-<br/><br/>
-
-### Tarea 4. Temas y personalización visual
+### Tarea 4. Temas y personalización visual.
 
 En esta tarea, crearás un componente Lit que admita diferentes temas visuales (por ejemplo, claro y oscuro) y permita personalización adicional mediante propiedades.
 
-
-#### Paso 1. **Definir el archivo `bb-temas.js`:**
+**Paso 1. Definir el archivo `bb-temas.js`:**
 
    Este archivo define un componente Lit que permite cambiar entre temas visuales y personalizar colores.
 
@@ -431,7 +424,7 @@ En esta tarea, crearás un componente Lit que admita diferentes temas visuales (
    customElements.define('bb-temas', BbTemas);
    ```
 
-#### Paso 2. **Actualizar el archivo `index.html`:**
+**Paso 2. Actualizar el archivo `index.html`:**
 
    Este archivo muestra el componente y permite personalizar los estilos.
 
@@ -461,28 +454,29 @@ En esta tarea, crearás un componente Lit que admita diferentes temas visuales (
    </html>
    ```
 
-#### Paso 3. **Probar el Componente**
+**Paso 3. Probar el Componente**
 
-    - Usa un servidor local como `live-server` para cargar la aplicación.
+1. Usa un servidor local como `live-server` para cargar la aplicación.
 
    ```cmd
    npm start
    ```
 
-#### Paso 4. **Verifica el resultado:**
-   - Observa cómo el componente cambia entre los temas claro y oscuro al hacer clic en el botón.
-   - Observa los colores personalizados aplicados mediante variables CSS.
+**Paso 4. Verifica el resultado:**
+
+1. Observa cómo el componente cambia entre los temas claro y oscuro al hacer clic en el botón.
+2. Observa los colores personalizados aplicados mediante variables CSS.
 
 
 ### **Conclusión**
 
 Con este componente, aprendiste a manejar temas y personalización visual en Lit, permitiendo alternar entre diferentes configuraciones de estilos y aplicar personalización adicional mediante propiedades y variables CSS. Esto mejora la flexibilidad y apariencia de los componentes en aplicaciones web modernas.
 
-<br/><br/>
+---
 
-### Tarea 5 Uso de classMap
+### Tarea 5. Uso de classMap
 
-#### Paso 1. **Define un nuevo componente Lit**
+**Paso 1. Define un nuevo componente Lit**
 
 ```javascript
 
@@ -586,7 +580,7 @@ customElements.define('bb-classmap', BBClassMap);
 
 ```
 
-#### Paso 2. **Actualiza tu página HTML**
+**Paso 2. Actualiza tu página HTML**
 
 ```html
  <!-- Componente personalizado -->
@@ -596,20 +590,19 @@ customElements.define('bb-classmap', BBClassMap);
     <script type="module" src="./src/bb-classmap.js"></script>
 ```
 
-### Paso 3. **Verifica el resultado:**
+**Paso 3. Verifica el resultado:**
 Observa cómo el componente cambia dinámicamente al interactuar con los botones. Puedes alternar el estado utilizando el botón "Toggle Active" y/o combinarlos con el botón "Toggle Disabled".
 
 1. ¿Cuántas combinaciones diferentes de estados lograste encontrar?
 2. Observa cómo los colores personalizados cambian según el estado, aplicados dinámicamente mediante clases CSS y la directiva `classMap`. ¿Qué combinación te pareció más interesante?
 
-<br/></br>
+---
 
+### Tarea 6. Transformación de Componente Lit.
 
-### Tarea 6 Transformación de Componente Lit
+**Paso 1. Define un nuevo componente Lit y transforma el componente.**
 
-#### Paso 1. **Define un nuevo componente Lit y transforma el componente**
-
-- Dado el siguiente código JavaScript que define un nuevo componente Lit, completa la implementación del segundo componente asegurando que utilice la directiva `classMap` para gestionar dinámicamente las clases CSS, manteniendo la misma funcionalidad que en el primer componente.
+1. Dado el siguiente código JavaScript que define un nuevo componente Lit, completa la implementación del segundo componente asegurando que utilice la directiva `classMap` para gestionar dinámicamente las clases CSS, manteniendo la misma funcionalidad que en el primer componente.
 
 ```javascript
 import { LitElement, html, css } from 'lit';
@@ -660,7 +653,7 @@ customElements.define('bb-texto-negritasd', BBTextoNegritasD);
 
 ```
 
-#### Paso 2. **Actualiza tu página HTML**
+**Paso 2. Actualiza tu página HTML.**
 
 ```html
     
@@ -673,7 +666,7 @@ customElements.define('bb-texto-negritasd', BBTextoNegritasD);
 
 ```
 
-### Paso 3. **Verifica el resultado:**
+**Paso 3. Verifica el resultado:**
  
 - Como último paso, verifica el comportamiento del componente recargando la página para asegurarte de que la funcionalidad y la gestión dinámica de clases con `classMap` se mantienen correctamente en esta práctica.
 
@@ -685,11 +678,12 @@ toggleBold() {
 }
 ```
 
-<br/><br/>
+---
 
-### Tarea 7 Crear un Componente Lit con Diseño de Cuadrícula (CSS Grid)
+### Tarea 7. Crear un Componente Lit con Diseño de Cuadrícula (CSS Grid).
 
-#### Paso 1. **Crear un Componente Lit**
+**Paso 1. Crear un Componente Lit.**
+
 1. Dentro de la carpeta `src`, crea un nuevo archivo llamado `bb-grid.js`.
 
 2. Define un nuevo componente Lit básico:
@@ -718,7 +712,7 @@ toggleBold() {
    customElements.define('bb-grid', BBGrid);
    ```
 
-#### Paso 2. **Definir Estilos con CSS Grid**
+**Paso 2. Definir Estilos con CSS Grid**
 
 En el bloque `static styles`, implementa el diseño de cuadrícula:
 
@@ -765,7 +759,7 @@ En el bloque `static styles`, implementa el diseño de cuadrícula:
    }
    ```
 
-#### Paso 3. **Probar el Componente**
+**Paso 3. Probar el Componente.**
 
 1. Importa y usa tu componente en el archivo `index.html`:
    ```html
@@ -780,9 +774,7 @@ En el bloque `static styles`, implementa el diseño de cuadrícula:
 
 3. Abre el navegador y/o verifica el diseño de la cuadrícula.
 
-
-
-#### Paso 4. **Extra: Mejoras Opcionales**
+**Paso 4. Extra: Mejoras Opcionales**
 
 - **Hacer la cuadrícula responsiva**:
 
@@ -807,7 +799,7 @@ En el bloque `static styles`, implementa el diseño de cuadrícula:
   }
   ```
 
-#### Paso 5. **Contesta lo siguiente**
+**Paso 5. Contesta lo siguiente**
  
 1. ¿Cuántas columnas tiene la cuadrícula?
 
@@ -823,47 +815,28 @@ En el bloque `static styles`, implementa el diseño de cuadrícula:
 
 7. ¿Es posibile personalizar el diseño del componente?
 
-
-<br/><br/>
-
-## Resultados Esperados
+## Resultados esperados:
 
 - Captura de pantalla de la Tarea 1. Estilos en Lit
 
 ![Resultados Esperados](../images/image3_2_1_1.png)
 
-<br/>
-
 - Captura de pantalla de la Tarea 2. Encapsulación de estilos con Shadow DOM
 
 ![Resultados Esperados](../images/image3_2_1_2.png)
-
-
-<br/>
 
 - Captura de pantalla de la Tarea 3. Uso de CSS en componentes Lit (css y clases dinámicas)
 
 ![Resultados Esperados](../images/image3_2_1_3.png)
 
-<br/>
-
 - Captura de pantalla de la Tarea 4. Temas
 
 ![Resultados Esperados](../images/image3_2_1_4.png)
-
-<br/>
 
 - Captura de pantalla de la Tarea 5. Uso de classMap
 
 ![Resultados Esperados](../images/image3_2_1_5.png)
 
-<br/>
-
 - Captura de pantalla de la Tarea 7. Crear un Componente Lit con Diseño de Cuadrícula (CSS Grid) 
 
-
 ![Resultados Esperados](../images/image3_2_1_7.png)
-
-
-
-
